@@ -5,6 +5,7 @@
 #include "constants.h"
 #include "Mouse.h"
 #include "RandomNumberGenerator.h"
+// EXAMNPLE CHANGE
 
 class Snake {
 	public:
