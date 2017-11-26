@@ -17,6 +17,14 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="368f990d-114c-4e87-a584-ca03136b3c3e" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="2f97223b-ca6f-4b27-8790-9f89dfdf1a6c">
+            <elementDefinition Id="de4171f8-80df-4062-b9b0-7b87c24a9760" />
+            <body>is position correct?
+
+local copy for mouse x and y or not?</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
         <fragments>
           <behaviorExecutionSpecification Id="7c81ae55-80c4-424d-9620-f1370a3022cd" name="BehaviorExecutionSpecification8">

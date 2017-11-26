@@ -84,5 +84,9 @@
         <umlExecutionSpecificationShapeMoniker Id="dc02ec89-2164-4860-b83c-a10d6adfda30" />
       </nodes>
     </syncSelfMessageConnector>
+    <commentShape Id="5a601119-8076-4447-ba30-42bad9328115" absoluteBounds="6.75, 0.875, 1.25, 0.75" customColor="251, 247, 200">
+      <commentMoniker Id="2f97223b-ca6f-4b27-8790-9f89dfdf1a6c" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </sequenceDesignerDiagram>

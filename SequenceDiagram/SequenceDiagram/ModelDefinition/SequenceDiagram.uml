@@ -27,6 +27,14 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="de4171f8-80df-4062-b9b0-7b87c24a9760">
+            <body>is position correct?
+
+local copy for mouse x and y or not?</body>
+          </comment>
+        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="377fc16e-6dd9-4025-aa39-63646153d321"
