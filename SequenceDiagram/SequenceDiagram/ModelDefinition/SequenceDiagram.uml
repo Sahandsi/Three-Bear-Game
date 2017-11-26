@@ -30,7 +30,7 @@
         <ownedCommentsInternal>
           <comment
             Id="de4171f8-80df-4062-b9b0-7b87c24a9760">
-            <body>is position correct?
+            <body>is at_position correct?
 
 local copy for mouse x and y or not?</body>
             <annotatedElements>
@@ -710,7 +710,7 @@ local copy for mouse x and y or not?</body>
           </message>
           <message
             Id="f6f283a2-1911-4528-892a-5d31b771e713"
-            name="1.1. position:= is_at_position(x,y) : Boolean"
+            name="1.1. at_position:= is_at_position(x,y) : Boolean"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="true">

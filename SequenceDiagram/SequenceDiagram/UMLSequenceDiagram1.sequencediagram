@@ -20,7 +20,7 @@
         <ownedCommentsInternal>
           <comment Id="2f97223b-ca6f-4b27-8790-9f89dfdf1a6c">
             <elementDefinition Id="de4171f8-80df-4062-b9b0-7b87c24a9760" />
-            <body>is position correct?
+            <body>is at_position correct?
 
 local copy for mouse x and y or not?</body>
             <annotatedElements>
@@ -388,7 +388,7 @@ local copy for mouse x and y or not?</body>
               <messageOccurrenceSpecificationMoniker Id="a99fc885-a80d-4ebf-a74a-994b4cd63bf9" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="1f337408-f2e5-4023-96fa-84783faa7ec4" name="1.1. position:= is_at_position(x,y) : Boolean" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
+          <message Id="1f337408-f2e5-4023-96fa-84783faa7ec4" name="1.1. at_position:= is_at_position(x,y) : Boolean" messageKind="Complete" messageSort="SynchCall" createSelfMessage="true">
             <elementDefinition Id="f6f283a2-1911-4528-892a-5d31b771e713" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="6a17564d-b88d-4ef7-9d94-9ab4f65c610b" LastKnownName="MessageOccurrenceSpecification21" />
