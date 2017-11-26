@@ -23,6 +23,9 @@
             <body>is position correct?
 
 local copy for mouse x and y or not?</body>
+            <annotatedElements>
+              <behaviorExecutionSpecificationMoniker Id="45d73c39-176e-41e5-9472-c8f6ad8d36cf" LastKnownName="BehaviorExecutionSpecification10" />
+            </annotatedElements>
           </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
@@ -42,6 +45,8 @@ local copy for mouse x and y or not?</body>
               <messageOccurrenceSpecificationMoniker Id="0e285378-4aa2-4334-9a15-1833c1e05be5" LastKnownName="MessageOccurrenceSpecification14" />
               <messageOccurrenceSpecificationMoniker Id="c80e2554-1d16-41de-925e-cf0c8cb0e6cf" LastKnownName="MessageOccurrenceSpecification17" />
               <messageOccurrenceSpecificationMoniker Id="c23dad18-4ea4-4434-ad42-0433b6ad43fe" LastKnownName="MessageOccurrenceSpecification20" />
+              <messageOccurrenceSpecificationMoniker Id="9c0cb79e-78f0-49ac-9cf8-1cc2b48bc24e" LastKnownName="MessageOccurrenceSpecification23" />
+              <messageOccurrenceSpecificationMoniker Id="b9048715-508d-4b87-803e-4c9226add33c" LastKnownName="MessageOccurrenceSpecification26" />
               <messageOccurrenceSpecificationMoniker Id="bf6bfc36-a028-4e68-aa70-98831fca6862" LastKnownName="MessageOccurrenceSpecification15" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
@@ -182,6 +187,68 @@ local copy for mouse x and y or not?</body>
               <lifelineMoniker Id="3c17431f-69b4-4b40-990f-617ac31fc29b" LastKnownName="snake_ : Snake" />
             </covered>
           </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="9dfbd247-fc39-4e1c-bb87-303f0362be27" name="BehaviorExecutionSpecification11">
+            <elementDefinition Id="921d16d6-5681-4ff7-9824-46e1267d1ba9" />
+            <coveredLifelines>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ce4ffea8-fc1a-4fcf-a031-5939b66bb19f" LastKnownName="ExecutionOccurrenceSpecification22" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="46a093e7-968d-45dc-8ca8-fba6318539a5" LastKnownName="ExecutionOccurrenceSpecification21" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="53c8a015-42ec-4877-b3c6-3afca33305e1" LastKnownName="MessageOccurrenceSpecification24" />
+              <messageOccurrenceSpecificationMoniker Id="5ce52f85-0698-4f07-b146-d61c47553ddc" LastKnownName="MessageOccurrenceSpecification25" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="46a093e7-968d-45dc-8ca8-fba6318539a5" name="ExecutionOccurrenceSpecification21">
+            <elementDefinition Id="d7a85a4b-c790-4880-ba3c-4350751a903a" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="7754af8b-316b-4c46-9eb1-9d12a3a00740" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="9c0cb79e-78f0-49ac-9cf8-1cc2b48bc24e" name="MessageOccurrenceSpecification23">
+            <elementDefinition Id="4da3ff0e-8101-439e-97be-746e0110da31" />
+            <covered>
+              <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="53c8a015-42ec-4877-b3c6-3afca33305e1" name="MessageOccurrenceSpecification24">
+            <elementDefinition Id="4e5fb5e6-d58c-4327-8d5f-6dbd635da6bc" />
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5ce52f85-0698-4f07-b146-d61c47553ddc" name="MessageOccurrenceSpecification25">
+            <elementDefinition Id="94a0a847-fa86-4e80-8880-7587b546d40a" />
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b9048715-508d-4b87-803e-4c9226add33c" name="MessageOccurrenceSpecification26">
+            <elementDefinition Id="7d41c929-ef97-438c-9a1d-40179be85413" />
+            <covered>
+              <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ce4ffea8-fc1a-4fcf-a031-5939b66bb19f" name="ExecutionOccurrenceSpecification22">
+            <elementDefinition Id="666f7f24-5f28-49af-97e3-ab44c1bca1ac" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ad7d31fe-686a-48bd-a257-fe2f55476157" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="bf6bfc36-a028-4e68-aa70-98831fca6862" name="MessageOccurrenceSpecification15">
             <elementDefinition Id="e4df64cf-ad60-4fcb-8ecb-3c7a96b6d588" />
             <covered>
@@ -219,6 +286,13 @@ local copy for mouse x and y or not?</body>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="350a79b7-73a0-487a-aa3d-a3d3fcd1baf5" LastKnownName="ExecutionOccurrenceSpecification15" />
               <executionOccurrenceSpecificationMoniker Id="6946c766-3525-48cc-8038-36b72935e7dc" LastKnownName="ExecutionOccurrenceSpecification16" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="51583e19-6efc-4468-83b3-0b589e309ee2" name="mouse_ : Mouse" isActor="false" lifelineDisplayName="mouse_ : Mouse">
+            <elementDefinition Id="830f489a-b069-4287-a1b9-a36a007a0957" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="46a093e7-968d-45dc-8ca8-fba6318539a5" LastKnownName="ExecutionOccurrenceSpecification21" />
+              <executionOccurrenceSpecificationMoniker Id="ce4ffea8-fc1a-4fcf-a031-5939b66bb19f" LastKnownName="ExecutionOccurrenceSpecification22" />
             </topLevelOccurrences>
           </lifeline>
           <lifeline Id="3c17431f-69b4-4b40-990f-617ac31fc29b" name="snake_ : Snake" isActor="false" lifelineDisplayName="snake_ : Snake">
@@ -266,6 +340,24 @@ local copy for mouse x and y or not?</body>
               <messageOccurrenceSpecificationMoniker Id="c23dad18-4ea4-4434-ad42-0433b6ad43fe" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
+          <message Id="191fd799-56d8-40a4-90de-5e9b58b8abc7" name="alt [caught] 2a. die() " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="19cf5dd9-e544-4227-a9d7-858cd226ba12" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="9c0cb79e-78f0-49ac-9cf8-1cc2b48bc24e" LastKnownName="MessageOccurrenceSpecification23" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="53c8a015-42ec-4877-b3c6-3afca33305e1" LastKnownName="MessageOccurrenceSpecification24" />
+            </receiveEvent>
+          </message>
+          <message Id="021bd560-c01d-4946-a8e2-4c0dba511897" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="b4d04951-e875-4b54-894b-314bf8db20df" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5ce52f85-0698-4f07-b146-d61c47553ddc" LastKnownName="MessageOccurrenceSpecification25" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="b9048715-508d-4b87-803e-4c9226add33c" LastKnownName="MessageOccurrenceSpecification26" />
+            </receiveEvent>
+          </message>
           <message Id="b7b92ceb-98f7-4f1a-9c28-a78cbb30c5a1" name="&lt;&lt;return&gt;&gt;" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="0bef9d0b-07e0-4032-868d-9f3cb5b3e7ec" />
             <sendEvent>
@@ -306,6 +398,16 @@ local copy for mouse x and y or not?</body>
     <packageHasNamedElement>
       <executionEvent Id="7944f226-d883-4615-9e26-179a736496ea" name="ExecutionEvent">
         <elementDefinition Id="3840c7f8-7e4f-4a71-8d1d-77b78f3e419e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="7754af8b-316b-4c46-9eb1-9d12a3a00740" name="ExecutionEvent">
+        <elementDefinition Id="28e9d1fa-e2c0-4662-a8e2-2602ad21aa36" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ad7d31fe-686a-48bd-a257-fe2f55476157" name="ExecutionEvent">
+        <elementDefinition Id="88545e2a-08d7-40b9-a9c9-9720129b2390" />
       </executionEvent>
     </packageHasNamedElement>
   </packagedElements>
