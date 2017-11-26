@@ -38,7 +38,7 @@ and how to represent if and else if? is this correct</body>
           </comment>
           <comment Id="ba63c932-4047-4dd8-8649-e1ef9d20350b">
             <elementDefinition Id="18f1eea7-8a60-457a-b516-b009e9480a7c" />
-            <body>how to represent true and false?</body>
+            <body>how to represent true and false in the sequence diagram?</body>
           </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />

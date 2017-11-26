@@ -286,7 +286,7 @@
         <umlExecutionSpecificationShapeMoniker Id="3da79809-e731-4589-bcbe-94ef3eedd5c3" />
       </nodes>
     </returnMessageConnector>
-    <commentShape Id="c2cbf7bb-0619-4cf7-99f6-ee26754e452e" absoluteBounds="9.5, 12.5, 1.25, 0.375" customColor="251, 247, 200">
+    <commentShape Id="c2cbf7bb-0619-4cf7-99f6-ee26754e452e" absoluteBounds="9.5, 12.5, 1.25, 0.5" customColor="251, 247, 200">
       <commentMoniker Id="ba63c932-4047-4dd8-8649-e1ef9d20350b" />
       <relativeChildShapes />
     </commentShape>
