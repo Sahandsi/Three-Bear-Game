@@ -85,6 +85,14 @@ local copy for mouse x and y or not?</body>
                 LastKnownName="MessageOccurrenceSpecification26"
                 LastKnownLocation="SequenceDiagram.uml" />
               <messageOccurrenceSpecificationMoniker
+                Id="8fd85c10-0a22-44b2-ad9f-e1cbaf6d8db1"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="SequenceDiagram.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c9dee8f1-ca80-4131-8961-0fa4cf3baaaa"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="SequenceDiagram.uml" />
+              <messageOccurrenceSpecificationMoniker
                 Id="e4df64cf-ad60-4fcb-8ecb-3c7a96b6d588"
                 LastKnownName="MessageOccurrenceSpecification15"
                 LastKnownLocation="SequenceDiagram.uml" />
@@ -440,6 +448,114 @@ local copy for mouse x and y or not?</body>
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="25915d8e-f43f-4f87-9384-c705ae1f2679"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="7d044575-2656-43bc-8bdb-1ea7cd417c11"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="206d0ea0-8739-42a4-afe5-cbd99472971b"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0a40849c-9af5-4720-a420-7120c41a4e75"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="SequenceDiagram.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1188d599-2999-4460-8b86-5efceab11918"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="206d0ea0-8739-42a4-afe5-cbd99472971b"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="53529738-51e2-45bd-88ef-d256ad228087"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SequenceDiagram.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8fd85c10-0a22-44b2-ad9f-e1cbaf6d8db1"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0a40849c-9af5-4720-a420-7120c41a4e75"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1188d599-2999-4460-8b86-5efceab11918"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c9dee8f1-ca80-4131-8961-0fa4cf3baaaa"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="7d044575-2656-43bc-8bdb-1ea7cd417c11"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d0370d0e-7d6b-4b8e-a7ab-9b81522855e1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="SequenceDiagram.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="e4df64cf-ad60-4fcb-8ecb-3c7a96b6d588"
             name="MessageOccurrenceSpecification15">
@@ -513,6 +629,22 @@ local copy for mouse x and y or not?</body>
             </topLevelOccurrences>
           </lifeline>
           <lifeline
+            Id="ddc51473-10ac-476c-9ef0-a079ffb9bd1e"
+            name="snake_ : Snake"
+            isActor="false"
+            lifelineDisplayName="snake_ : Snake">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="0edce105-ef59-4a08-a9c4-bddf5eb4447a"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="SequenceDiagram.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a0002a53-df71-47d8-abf4-9ecb978d1958"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
             Id="830f489a-b069-4287-a1b9-a36a007a0957"
             name="mouse_ : Mouse"
             isActor="false"
@@ -526,21 +658,13 @@ local copy for mouse x and y or not?</body>
                 Id="666f7f24-5f28-49af-97e3-ab44c1bca1ac"
                 LastKnownName="ExecutionOccurrenceSpecification22"
                 LastKnownLocation="SequenceDiagram.uml" />
-            </topLevelOccurrences>
-          </lifeline>
-          <lifeline
-            Id="ddc51473-10ac-476c-9ef0-a079ffb9bd1e"
-            name="snake_ : Snake"
-            isActor="false"
-            lifelineDisplayName="snake_ : Snake">
-            <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
-                Id="0edce105-ef59-4a08-a9c4-bddf5eb4447a"
-                LastKnownName="ExecutionOccurrenceSpecification17"
+                Id="206d0ea0-8739-42a4-afe5-cbd99472971b"
+                LastKnownName="ExecutionOccurrenceSpecification23"
                 LastKnownLocation="SequenceDiagram.uml" />
               <executionOccurrenceSpecificationMoniker
-                Id="a0002a53-df71-47d8-abf4-9ecb978d1958"
-                LastKnownName="ExecutionOccurrenceSpecification18"
+                Id="7d044575-2656-43bc-8bdb-1ea7cd417c11"
+                LastKnownName="ExecutionOccurrenceSpecification24"
                 LastKnownLocation="SequenceDiagram.uml" />
             </topLevelOccurrences>
           </lifeline>
@@ -661,6 +785,44 @@ local copy for mouse x and y or not?</body>
             </receiveEvent>
           </message>
           <message
+            Id="83426467-97e0-4a3a-b343-71d237c40468"
+            name="else 2b. on_hole:= has_reached_a_hole(ug: Underground)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8fd85c10-0a22-44b2-ad9f-e1cbaf6d8db1"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0a40849c-9af5-4720-a420-7120c41a4e75"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dfa2d377-e0d2-4232-b42e-b1c14dfa78bd"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1188d599-2999-4460-8b86-5efceab11918"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c9dee8f1-ca80-4131-8961-0fa4cf3baaaa"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </receiveEvent>
+          </message>
+          <message
             Id="0bef9d0b-07e0-4032-868d-9f3cb5b3e7ec"
             name="&lt;&lt;return&gt;&gt;"
             messageKind="Complete"
@@ -720,6 +882,16 @@ local copy for mouse x and y or not?</body>
     <packageHasNamedElement>
       <executionEvent
         Id="88545e2a-08d7-40b9-a9c9-9720129b2390"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="53529738-51e2-45bd-88ef-d256ad228087"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d0370d0e-7d6b-4b8e-a7ab-9b81522855e1"
         name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
