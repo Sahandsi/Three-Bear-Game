@@ -13,6 +13,7 @@ using namespace std;
 
 class Game
 {
+	// THESE SHOULD BE PRIVATE
 	public:
 		Mouse mouse_;
 		Snake snake_;
