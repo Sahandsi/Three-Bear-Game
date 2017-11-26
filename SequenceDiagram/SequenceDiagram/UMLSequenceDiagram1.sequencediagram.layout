@@ -12,7 +12,7 @@
         <lifelineHoverShape Id="13ae7215-f7c5-4553-877d-260c18e9e58c" absoluteBounds="2.7083334922790532, 1, 0, 7">
           <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
         </lifelineHoverShape>
-        <umlExecutionSpecificationShape Id="21d7db68-42cf-44bd-b31d-558a1a57534a" absoluteBounds="2.7083334922790532, 1.3333333333333333, 0.15, 1.9999999999999998" customColor="184, 204, 215" visualStyleMode="Modified">
+        <umlExecutionSpecificationShape Id="21d7db68-42cf-44bd-b31d-558a1a57534a" absoluteBounds="2.7083334922790532, 1.3333333333333333, 0.15, 3.135416666666667" customColor="184, 204, 215" visualStyleMode="Modified">
           <behaviorExecutionSpecificationMoniker Id="7c81ae55-80c4-424d-9620-f1370a3022cd" LastKnownName="BehaviorExecutionSpecification8" />
         </umlExecutionSpecificationShape>
       </relativeChildShapes>
@@ -56,7 +56,7 @@
         <umlExecutionSpecificationShapeMoniker Id="21d7db68-42cf-44bd-b31d-558a1a57534a" />
       </nodes>
     </syncMessageConnector>
-    <returnMessageConnector edgePoints="[(2.70833349227905 : 3.33333333333333); (1.3875 : 3.33333333333333)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
+    <returnMessageConnector edgePoints="[(2.70833349227905 : 4.46875); (1.3875 : 4.46875)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
       <relativeChildShapes />
       <nodes>
         <umlExecutionSpecificationShapeMoniker Id="21d7db68-42cf-44bd-b31d-558a1a57534a" />
@@ -84,7 +84,7 @@
         <umlExecutionSpecificationShapeMoniker Id="dc02ec89-2164-4860-b83c-a10d6adfda30" />
       </nodes>
     </syncSelfMessageConnector>
-    <commentShape Id="5a601119-8076-4447-ba30-42bad9328115" absoluteBounds="6.75, 0.875, 1.25, 0.75" customColor="251, 247, 200">
+    <commentShape Id="5a601119-8076-4447-ba30-42bad9328115" absoluteBounds="6.625, 0.75, 1.25, 0.75" customColor="251, 247, 200">
       <commentMoniker Id="2f97223b-ca6f-4b27-8790-9f89dfdf1a6c" />
       <relativeChildShapes />
     </commentShape>
