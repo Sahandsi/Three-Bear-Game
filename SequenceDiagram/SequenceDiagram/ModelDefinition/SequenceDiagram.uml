@@ -391,22 +391,22 @@ local copy for mouse x and y or not?</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="4da3ff0e-8101-439e-97be-746e0110da31"
-            name="MessageOccurrenceSpecification23">
-            <covered>
-              <lifelineMoniker
-                Id="86ff9a54-04b9-4796-9396-d2419954e575"
-                LastKnownName="game : Game"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="4e5fb5e6-d58c-4327-8d5f-6dbd635da6bc"
             name="MessageOccurrenceSpecification24">
             <covered>
               <lifelineMoniker
                 Id="830f489a-b069-4287-a1b9-a36a007a0957"
                 LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4da3ff0e-8101-439e-97be-746e0110da31"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -499,16 +499,6 @@ local copy for mouse x and y or not?</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="8fd85c10-0a22-44b2-ad9f-e1cbaf6d8db1"
-            name="MessageOccurrenceSpecification27">
-            <covered>
-              <lifelineMoniker
-                Id="86ff9a54-04b9-4796-9396-d2419954e575"
-                LastKnownName="game : Game"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="0a40849c-9af5-4720-a420-7120c41a4e75"
             name="MessageOccurrenceSpecification28">
             <covered>
@@ -519,12 +509,12 @@ local copy for mouse x and y or not?</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="1188d599-2999-4460-8b86-5efceab11918"
-            name="MessageOccurrenceSpecification29">
+            Id="8fd85c10-0a22-44b2-ad9f-e1cbaf6d8db1"
+            name="MessageOccurrenceSpecification27">
             <covered>
               <lifelineMoniker
-                Id="830f489a-b069-4287-a1b9-a36a007a0957"
-                LastKnownName="mouse_ : Mouse"
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -535,6 +525,16 @@ local copy for mouse x and y or not?</body>
               <lifelineMoniker
                 Id="86ff9a54-04b9-4796-9396-d2419954e575"
                 LastKnownName="game : Game"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1188d599-2999-4460-8b86-5efceab11918"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -557,22 +557,22 @@ local copy for mouse x and y or not?</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="e4df64cf-ad60-4fcb-8ecb-3c7a96b6d588"
-            name="MessageOccurrenceSpecification15">
-            <covered>
-              <lifelineMoniker
-                Id="86ff9a54-04b9-4796-9396-d2419954e575"
-                LastKnownName="game : Game"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="fcaa4cc7-8ace-4e05-9bca-21bf95dd153b"
             name="MessageOccurrenceSpecification16">
             <covered>
               <lifelineMoniker
                 Id="fd2a4414-17de-46c3-ae33-f42c4b3e4662"
                 LastKnownName="?"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e4df64cf-ad60-4fcb-8ecb-3c7a96b6d588"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
