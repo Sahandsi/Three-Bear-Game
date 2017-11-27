@@ -3,18 +3,6 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="368f990d-114c-4e87-a584-ca03136b3c3e" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
-        <ownedCommentsInternal>
-          <comment Id="31dfcb94-473a-433f-b307-99bf9bef8624">
-            <elementDefinition Id="3c9aed5e-94e9-4ae7-a2b8-c0d90eef2dd9" />
-            <body>local copy for ug underground object and the h: Hole object
-
-
-</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker Id="1ccb1ded-26dc-42fc-a4a5-0a6845bfe853" LastKnownName="BehaviorExecutionSpecification12" />
-            </annotatedElements>
-          </comment>
-        </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
         <fragments>
           <behaviorExecutionSpecification Id="7c81ae55-80c4-424d-9620-f1370a3022cd" name="BehaviorExecutionSpecification8">
@@ -1035,7 +1023,7 @@
               <messageOccurrenceSpecificationMoniker Id="c23dad18-4ea4-4434-ad42-0433b6ad43fe" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
-          <message Id="191fd799-56d8-40a4-90de-5e9b58b8abc7" name="alt [caught] 2a. die() " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="191fd799-56d8-40a4-90de-5e9b58b8abc7" name="[caught] 2a. die() " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="19cf5dd9-e544-4227-a9d7-858cd226ba12" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9c0cb79e-78f0-49ac-9cf8-1cc2b48bc24e" LastKnownName="MessageOccurrenceSpecification23" />

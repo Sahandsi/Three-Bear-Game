@@ -27,21 +27,6 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
-        <ownedCommentsInternal>
-          <comment
-            Id="3c9aed5e-94e9-4ae7-a2b8-c0d90eef2dd9">
-            <body>local copy for ug underground object and the h: Hole object
-
-
-</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker
-                Id="25915d8e-f43f-4f87-9384-c705ae1f2679"
-                LastKnownName="BehaviorExecutionSpecification12"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </annotatedElements>
-          </comment>
-        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="377fc16e-6dd9-4025-aa39-63646153d321"
@@ -1948,7 +1933,7 @@
           </message>
           <message
             Id="19cf5dd9-e544-4227-a9d7-858cd226ba12"
-            name="alt [caught] 2a. die() "
+            name="[caught] 2a. die() "
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">

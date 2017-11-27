@@ -200,17 +200,6 @@
         </umlExecutionSpecificationShape>
       </relativeChildShapes>
     </lifelineShape>
-    <commentShape Id="6c16ea4f-88ee-4adf-910f-3f3202f84345" absoluteBounds="6.5, 4.875, 1.25, 1.125" customColor="251, 247, 200">
-      <commentMoniker Id="31dfcb94-473a-433f-b307-99bf9bef8624" />
-      <relativeChildShapes />
-    </commentShape>
-    <commentConnector edgePoints="[(7.75 : 5.4375); (8.29258836955111 : 5.4375)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
-      <relativeChildShapes />
-      <nodes>
-        <commentShapeMoniker Id="6c16ea4f-88ee-4adf-910f-3f3202f84345" />
-        <umlExecutionSpecificationShapeMoniker Id="3da79809-e731-4589-bcbe-94ef3eedd5c3" />
-      </nodes>
-    </commentConnector>
     <syncMessageConnector edgePoints="[(8.44258836955111 : 7.40797115045294); (10.9827896234143 : 7.40797115045294)]" fixedFrom="Caller" fixedTo="Caller" TargetRelationshipDomainClassId="e24617ce-6c7e-4c7d-802a-63014f02e313" customColor="Black" visible="true" visualStyleMode="Modified" messageId="00000000-0000-0000-0000-000000000000">
       <relativeChildShapes />
       <nodes>
