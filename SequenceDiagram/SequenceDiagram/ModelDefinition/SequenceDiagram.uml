@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="6f37c8fb-3ef8-4a06-ac6b-cf89bfa74027"
   name="SequenceDiagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -29,32 +29,17 @@
         isReentrant="false">
         <ownedCommentsInternal>
           <comment
-            Id="de4171f8-80df-4062-b9b0-7b87c24a9760">
-            <body>is at_position correct?
-
-local copy for mouse x and y or not?</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker
-                Id="fcbbe08a-1bc1-45af-98fd-7b330d9c6fae"
-                LastKnownName="BehaviorExecutionSpecification10"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </annotatedElements>
-          </comment>
-          <comment
             Id="3c9aed5e-94e9-4ae7-a2b8-c0d90eef2dd9">
             <body>local copy for ug underground object?
 
-and how to represent if and else if? is this correct</body>
+
+</body>
             <annotatedElements>
               <behaviorExecutionSpecificationMoniker
                 Id="25915d8e-f43f-4f87-9384-c705ae1f2679"
                 LastKnownName="BehaviorExecutionSpecification12"
                 LastKnownLocation="SequenceDiagram.uml" />
             </annotatedElements>
-          </comment>
-          <comment
-            Id="18f1eea7-8a60-457a-b516-b009e9480a7c">
-            <body>how to represent true and false in the sequence diagram?</body>
           </comment>
         </ownedCommentsInternal>
         <fragments>
@@ -435,22 +420,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="94a0a847-fa86-4e80-8880-7587b546d40a"
-            name="MessageOccurrenceSpecification25">
-            <covered>
-              <lifelineMoniker
-                Id="830f489a-b069-4287-a1b9-a36a007a0957"
-                LastKnownName="mouse_ : Mouse"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="7d41c929-ef97-438c-9a1d-40179be85413"
             name="MessageOccurrenceSpecification26">
             <covered>
               <lifelineMoniker
                 Id="86ff9a54-04b9-4796-9396-d2419954e575"
                 LastKnownName="game : Game"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="94a0a847-fa86-4e80-8880-7587b546d40a"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -677,22 +662,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="548d0afa-c3a6-488f-8348-e620b0fe5302"
-            name="MessageOccurrenceSpecification47">
-            <covered>
-              <lifelineMoniker
-                Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
-                LastKnownName="h : Hole"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="c60a73d8-e94b-47e8-8a28-29133b0ca281"
             name="MessageOccurrenceSpecification48">
             <covered>
               <lifelineMoniker
                 Id="830f489a-b069-4287-a1b9-a36a007a0957"
                 LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="548d0afa-c3a6-488f-8348-e620b0fe5302"
+            name="MessageOccurrenceSpecification47">
+            <covered>
+              <lifelineMoniker
+                Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
+                LastKnownName="h : Hole"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1001,22 +986,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="10647e83-8085-416e-b50e-94083bfeb2b2"
-            name="MessageOccurrenceSpecification64">
-            <covered>
-              <lifelineMoniker
-                Id="830f489a-b069-4287-a1b9-a36a007a0957"
-                LastKnownName="mouse_ : Mouse"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="d3d759dc-613b-4840-b434-55003c218248"
             name="MessageOccurrenceSpecification63">
             <covered>
               <lifelineMoniker
                 Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
                 LastKnownName="h : Hole"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="10647e83-8085-416e-b50e-94083bfeb2b2"
+            name="MessageOccurrenceSpecification64">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>

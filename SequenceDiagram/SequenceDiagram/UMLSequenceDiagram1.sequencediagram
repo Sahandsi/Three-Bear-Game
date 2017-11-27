@@ -1,30 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d040cced-fd11-4a3c-9266-67e1badc2a21" name="Sequence1" linkedPackageId="d60c344f-89e1-4718-b871-7878f824922c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d040cced-fd11-4a3c-9266-67e1badc2a21" name="Sequence1" linkedPackageId="d60c344f-89e1-4718-b871-7878f824922c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="368f990d-114c-4e87-a584-ca03136b3c3e" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
         <ownedCommentsInternal>
-          <comment Id="2f97223b-ca6f-4b27-8790-9f89dfdf1a6c">
-            <elementDefinition Id="de4171f8-80df-4062-b9b0-7b87c24a9760" />
-            <body>is at_position correct?
-
-local copy for mouse x and y or not?</body>
-            <annotatedElements>
-              <behaviorExecutionSpecificationMoniker Id="45d73c39-176e-41e5-9472-c8f6ad8d36cf" LastKnownName="BehaviorExecutionSpecification10" />
-            </annotatedElements>
-          </comment>
           <comment Id="31dfcb94-473a-433f-b307-99bf9bef8624">
             <elementDefinition Id="3c9aed5e-94e9-4ae7-a2b8-c0d90eef2dd9" />
             <body>local copy for ug underground object?
 
-and how to represent if and else if? is this correct</body>
+
+</body>
             <annotatedElements>
               <behaviorExecutionSpecificationMoniker Id="1ccb1ded-26dc-42fc-a4a5-0a6845bfe853" LastKnownName="BehaviorExecutionSpecification12" />
             </annotatedElements>
-          </comment>
-          <comment Id="ba63c932-4047-4dd8-8649-e1ef9d20350b">
-            <elementDefinition Id="18f1eea7-8a60-457a-b516-b009e9480a7c" />
-            <body>how to represent true and false in the sequence diagram?</body>
           </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
@@ -229,16 +217,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="5ce52f85-0698-4f07-b146-d61c47553ddc" name="MessageOccurrenceSpecification25">
-            <elementDefinition Id="94a0a847-fa86-4e80-8880-7587b546d40a" />
-            <covered>
-              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="b9048715-508d-4b87-803e-4c9226add33c" name="MessageOccurrenceSpecification26">
             <elementDefinition Id="7d41c929-ef97-438c-9a1d-40179be85413" />
             <covered>
               <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="5ce52f85-0698-4f07-b146-d61c47553ddc" name="MessageOccurrenceSpecification25">
+            <elementDefinition Id="94a0a847-fa86-4e80-8880-7587b546d40a" />
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="ce4ffea8-fc1a-4fcf-a031-5939b66bb19f" name="ExecutionOccurrenceSpecification22">
@@ -346,16 +334,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="257c45f8-adba-4189-890b-5c27cbb250e9" name="MessageOccurrenceSpecification47">
-            <elementDefinition Id="548d0afa-c3a6-488f-8348-e620b0fe5302" />
-            <covered>
-              <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="18bee21d-708f-429a-afa6-43e2243f8a4e" name="MessageOccurrenceSpecification48">
             <elementDefinition Id="c60a73d8-e94b-47e8-8a28-29133b0ca281" />
             <covered>
               <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="257c45f8-adba-4189-890b-5c27cbb250e9" name="MessageOccurrenceSpecification47">
+            <elementDefinition Id="548d0afa-c3a6-488f-8348-e620b0fe5302" />
+            <covered>
+              <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="f87cf8a4-9ff8-4ec2-a1c1-a18969aca958" name="ExecutionOccurrenceSpecification32">
@@ -532,16 +520,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="8b297d61-676a-470a-9c46-1e706bd73f2f" name="MessageOccurrenceSpecification64">
-            <elementDefinition Id="10647e83-8085-416e-b50e-94083bfeb2b2" />
-            <covered>
-              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="a2e8791e-bb19-43cf-958a-035796944194" name="MessageOccurrenceSpecification63">
             <elementDefinition Id="d3d759dc-613b-4840-b434-55003c218248" />
             <covered>
               <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8b297d61-676a-470a-9c46-1e706bd73f2f" name="MessageOccurrenceSpecification64">
+            <elementDefinition Id="10647e83-8085-416e-b50e-94083bfeb2b2" />
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="04b65b2d-5a15-47d0-a3b7-1021ae56498c" name="ExecutionOccurrenceSpecification40">
