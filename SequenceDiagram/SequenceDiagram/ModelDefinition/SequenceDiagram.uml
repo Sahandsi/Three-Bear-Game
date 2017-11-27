@@ -32,6 +32,10 @@
             Id="2799e2d7-c7f5-42a8-ba9a-d9fb8593b651">
             <body>keypress</body>
           </comment>
+          <comment
+            Id="cd3a5aeb-c589-42d7-beaa-412a9f6947cd">
+            <body>is this part correct (if true) return true</body>
+          </comment>
         </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification

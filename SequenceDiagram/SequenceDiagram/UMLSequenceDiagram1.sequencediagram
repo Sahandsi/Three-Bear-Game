@@ -8,6 +8,10 @@
             <elementDefinition Id="2799e2d7-c7f5-42a8-ba9a-d9fb8593b651" />
             <body>keypress</body>
           </comment>
+          <comment Id="756e60ae-5da9-4f7c-aeaf-3d6686a089e0">
+            <elementDefinition Id="cd3a5aeb-c589-42d7-beaa-412a9f6947cd" />
+            <body>is this part correct (if true) return true</body>
+          </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
         <fragments>
