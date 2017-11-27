@@ -37,10 +37,10 @@
         </umlExecutionSpecificationShape>
       </relativeChildShapes>
     </lifelineShape>
-    <lifelineShape Id="9790d315-d45b-4693-8f5a-82f13dee4bab" absoluteBounds="1.025, 1, 0.15, 16.801336789627882" visible="true" visualStyleMode="Modified">
+    <lifelineShape Id="9790d315-d45b-4693-8f5a-82f13dee4bab" absoluteBounds="1.025, 1, 0.15, 16.801336789627882" visible="true" visualStyleMode="Custom">
       <lifelineMoniker Id="b3341d56-accd-45c8-9e98-553978553876" LastKnownName="Actor" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="a579a7d9-df40-4635-8bc2-1d3a4baeefdb" absoluteBounds="0.59999999999999987, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+        <umlLifelineHeadShape Id="a579a7d9-df40-4635-8bc2-1d3a4baeefdb" absoluteBounds="0.59999999999999987, 0.6, 1, 0.4" customColor="White" visualStyleMode="Custom">
           <lifelineMoniker Id="b3341d56-accd-45c8-9e98-553978553876" LastKnownName="Actor" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
@@ -347,5 +347,9 @@
         </interactionOperandShape>
       </nestedChildShapes>
     </combinedFragmentShape>
+    <commentShape Id="dca0240b-0ae8-4295-a334-9053e25a9b27" absoluteBounds="1.25, 1.5, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="3c49f881-dd28-4400-bd65-b2bfcdda3dd0" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </sequenceDesignerDiagram>

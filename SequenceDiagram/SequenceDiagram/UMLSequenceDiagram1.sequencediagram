@@ -3,6 +3,12 @@
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="368f990d-114c-4e87-a584-ca03136b3c3e" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <ownedCommentsInternal>
+          <comment Id="3c49f881-dd28-4400-bd65-b2bfcdda3dd0">
+            <elementDefinition Id="2799e2d7-c7f5-42a8-ba9a-d9fb8593b651" />
+            <body>keypress</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="3eb9daac-4243-4e55-847f-17f6a0de70bb" />
         <fragments>
           <behaviorExecutionSpecification Id="7c81ae55-80c4-424d-9620-f1370a3022cd" name="BehaviorExecutionSpecification8">
@@ -1253,7 +1259,7 @@
           </executionOccurrenceSpecification>
         </fragments>
         <lifelines>
-          <lifeline Id="b3341d56-accd-45c8-9e98-553978553876" name="Actor" isActor="false" lifelineDisplayName="Actor">
+          <lifeline Id="b3341d56-accd-45c8-9e98-553978553876" name="Actor" isActor="true" lifelineDisplayName="Actor">
             <elementDefinition Id="fd2a4414-17de-46c3-ae33-f42c4b3e4662" />
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker Id="156d9ff3-e41a-46c6-9caa-dbddccf323aa" LastKnownName="MessageOccurrenceSpecification13" />

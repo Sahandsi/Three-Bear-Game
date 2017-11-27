@@ -27,6 +27,12 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="2799e2d7-c7f5-42a8-ba9a-d9fb8593b651">
+            <body>keypress</body>
+          </comment>
+        </ownedCommentsInternal>
         <fragments>
           <behaviorExecutionSpecification
             Id="377fc16e-6dd9-4025-aa39-63646153d321"
@@ -2331,7 +2337,7 @@
           <lifeline
             Id="fd2a4414-17de-46c3-ae33-f42c4b3e4662"
             name="Actor"
-            isActor="false"
+            isActor="true"
             lifelineDisplayName="Actor">
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker
