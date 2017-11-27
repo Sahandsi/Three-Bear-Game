@@ -435,22 +435,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7d41c929-ef97-438c-9a1d-40179be85413"
-            name="MessageOccurrenceSpecification26">
-            <covered>
-              <lifelineMoniker
-                Id="86ff9a54-04b9-4796-9396-d2419954e575"
-                LastKnownName="game : Game"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="94a0a847-fa86-4e80-8880-7587b546d40a"
             name="MessageOccurrenceSpecification25">
             <covered>
               <lifelineMoniker
                 Id="830f489a-b069-4287-a1b9-a36a007a0957"
                 LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7d41c929-ef97-438c-9a1d-40179be85413"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="86ff9a54-04b9-4796-9396-d2419954e575"
+                LastKnownName="game : Game"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -677,22 +677,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="c60a73d8-e94b-47e8-8a28-29133b0ca281"
-            name="MessageOccurrenceSpecification48">
-            <covered>
-              <lifelineMoniker
-                Id="830f489a-b069-4287-a1b9-a36a007a0957"
-                LastKnownName="mouse_ : Mouse"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="548d0afa-c3a6-488f-8348-e620b0fe5302"
             name="MessageOccurrenceSpecification47">
             <covered>
               <lifelineMoniker
                 Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
                 LastKnownName="h : Hole"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c60a73d8-e94b-47e8-8a28-29133b0ca281"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="830f489a-b069-4287-a1b9-a36a007a0957"
+                LastKnownName="mouse_ : Mouse"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -1001,22 +1001,22 @@ and how to represent if and else if? is this correct</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="d3d759dc-613b-4840-b434-55003c218248"
-            name="MessageOccurrenceSpecification63">
-            <covered>
-              <lifelineMoniker
-                Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
-                LastKnownName="h : Hole"
-                LastKnownLocation="SequenceDiagram.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="10647e83-8085-416e-b50e-94083bfeb2b2"
             name="MessageOccurrenceSpecification64">
             <covered>
               <lifelineMoniker
                 Id="830f489a-b069-4287-a1b9-a36a007a0957"
                 LastKnownName="mouse_ : Mouse"
+                LastKnownLocation="SequenceDiagram.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d3d759dc-613b-4840-b434-55003c218248"
+            name="MessageOccurrenceSpecification63">
+            <covered>
+              <lifelineMoniker
+                Id="c4046c3a-06e4-47fe-8ef9-ec17f41b2807"
+                LastKnownName="h : Hole"
                 LastKnownLocation="SequenceDiagram.uml" />
             </covered>
           </messageOccurrenceSpecification>

@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d040cced-fd11-4a3c-9266-67e1badc2a21" name="Sequence1" linkedPackageId="d60c344f-89e1-4718-b871-7878f824922c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="df6fbf90-ab33-4e78-80f5-8d85cfb8fb14">
-      <profileInstance Id="01b7e7ad-4536-4307-ba0e-3859031c91b9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="052e0b97-a68c-487f-8583-35ef35989cb9">
-      <profileInstance Id="be110984-0284-4614-bb9d-8b9b1a5e0ab8" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="368f990d-114c-4e87-a584-ca03136b3c3e" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -243,16 +229,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="b9048715-508d-4b87-803e-4c9226add33c" name="MessageOccurrenceSpecification26">
-            <elementDefinition Id="7d41c929-ef97-438c-9a1d-40179be85413" />
-            <covered>
-              <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="5ce52f85-0698-4f07-b146-d61c47553ddc" name="MessageOccurrenceSpecification25">
             <elementDefinition Id="94a0a847-fa86-4e80-8880-7587b546d40a" />
             <covered>
               <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="b9048715-508d-4b87-803e-4c9226add33c" name="MessageOccurrenceSpecification26">
+            <elementDefinition Id="7d41c929-ef97-438c-9a1d-40179be85413" />
+            <covered>
+              <lifelineMoniker Id="b475b853-795c-4ce2-9bf4-c7ec64238a76" LastKnownName="game : Game" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="ce4ffea8-fc1a-4fcf-a031-5939b66bb19f" name="ExecutionOccurrenceSpecification22">
@@ -360,16 +346,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="18bee21d-708f-429a-afa6-43e2243f8a4e" name="MessageOccurrenceSpecification48">
-            <elementDefinition Id="c60a73d8-e94b-47e8-8a28-29133b0ca281" />
-            <covered>
-              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="257c45f8-adba-4189-890b-5c27cbb250e9" name="MessageOccurrenceSpecification47">
             <elementDefinition Id="548d0afa-c3a6-488f-8348-e620b0fe5302" />
             <covered>
               <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="18bee21d-708f-429a-afa6-43e2243f8a4e" name="MessageOccurrenceSpecification48">
+            <elementDefinition Id="c60a73d8-e94b-47e8-8a28-29133b0ca281" />
+            <covered>
+              <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="f87cf8a4-9ff8-4ec2-a1c1-a18969aca958" name="ExecutionOccurrenceSpecification32">
@@ -546,16 +532,16 @@ and how to represent if and else if? is this correct</body>
               <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="a2e8791e-bb19-43cf-958a-035796944194" name="MessageOccurrenceSpecification63">
-            <elementDefinition Id="d3d759dc-613b-4840-b434-55003c218248" />
-            <covered>
-              <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="8b297d61-676a-470a-9c46-1e706bd73f2f" name="MessageOccurrenceSpecification64">
             <elementDefinition Id="10647e83-8085-416e-b50e-94083bfeb2b2" />
             <covered>
               <lifelineMoniker Id="51583e19-6efc-4468-83b3-0b589e309ee2" LastKnownName="mouse_ : Mouse" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a2e8791e-bb19-43cf-958a-035796944194" name="MessageOccurrenceSpecification63">
+            <elementDefinition Id="d3d759dc-613b-4840-b434-55003c218248" />
+            <covered>
+              <lifelineMoniker Id="e39f10d9-dc04-40a6-a02b-7f860cca4279" LastKnownName="h : Hole" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="04b65b2d-5a15-47d0-a3b7-1021ae56498c" name="ExecutionOccurrenceSpecification40">
@@ -1236,5 +1222,19 @@ and how to represent if and else if? is this correct</body>
   </packagedElements>
   <package Id="d60c344f-89e1-4718-b871-7878f824922c" name="SequenceDiagram">
     <elementDefinition Id="6f37c8fb-3ef8-4a06-ac6b-cf89bfa74027" />
+    <profileInstances>
+      <packageHasProfileInstances Id="df6fbf90-ab33-4e78-80f5-8d85cfb8fb14">
+        <profileInstance Id="01b7e7ad-4536-4307-ba0e-3859031c91b9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="052e0b97-a68c-487f-8583-35ef35989cb9">
+        <profileInstance Id="be110984-0284-4614-bb9d-8b9b1a5e0ab8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
