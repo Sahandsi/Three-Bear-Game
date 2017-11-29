@@ -15,8 +15,9 @@ using namespace std;
 
 int main()
 {
-	UserInterface ui;
 	
+	
+	UserInterface ui;
 	// asghar testing here 
 	Game game;
 	
