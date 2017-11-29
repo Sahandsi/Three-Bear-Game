@@ -24,7 +24,8 @@ class Snake {
 		RandomNumberGenerator rng_;
 };
 
-Snake::Snake() {
+Snake::Snake()
+{
 	symbol_ = SNAKEHEAD;
 	position_at_random();
 	p_mouse_ = nullptr; //to make the pointer is safe before the snake spots the mouse
