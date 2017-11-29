@@ -1,11 +1,10 @@
-﻿  __MainApplication.cpp
-  Underground.cpp
-  Mouse.cpp
-  Generating Code...
-  Compiling...
-  Game.cpp
+﻿  Snake.cpp
   Generating Code...
   Skipping... (no relevant changes detected)
-  Snake.cpp
+  __MainApplication.cpp
+  Underground.cpp
+  Mouse.cpp
+  Hole.cpp
+  Game.cpp
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1202,5): warning MSB8030: The linker switch "Minimum Required Version" requires "SubSystem" to be set.  Without "SubSystem", the "Minimum Required Version" would not be passed to linker and could prevent to the output binary from running on older Operating Systems.
   OOPProject.vcxproj -> C:\Users\Home\Documents\GitHub\oop-mouse-snake\x64\Debug\OOPProject.exe
