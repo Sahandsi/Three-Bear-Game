@@ -8,12 +8,13 @@
 #include "Snake.h"
 // EXAMNPLE CHANGE
 
-Snake::Snake() : rng_()
-{
-	symbol_ = SNAKEHEAD;
-	position_at_random();
-	p_mouse_ = nullptr; //to make the pointer is safe before the snake spots the mouse
-}
+Snake::Snake() 
+	: rng_(),
+	symbol_(SNAKEHEAD),
+	x_(rng_.get_random_value(SIZE)),
+	y_(rng_.get_random_value(SIZE)),
+	p_mouse_(nullptr) //to make the pointer is safe before the snake spots the mouse
+{}
 Snake::~Snake()
 {}
 bool Snake::is_at_position(int x, int y) {
