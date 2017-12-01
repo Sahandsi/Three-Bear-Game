@@ -7,20 +7,20 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-Mouse::Mouse(): symbol_(MOUSE), x_(0), y_(0),    
+Mouse::Mouse(): symbol_(MOUSE), x_(0), y_(0),
                 alive_(true), escaped_(false), 
 				mouse_dx_(0), mouse_dy_(0) {
-	position_in_middle_of_grid(); 
+				position_in_middle_of_grid(); 
 }
 
 //////////////////////////////////////////////////////////////////////
 // Public functions
 //////////////////////////////////////////////////////////////////////
 
-int Mouse::get_x() {
+int Mouse::get_x() const {
 	return x_;
 }
-int Mouse::get_y() {
+int Mouse::get_y() const {
 	return y_;
 }
 char Mouse::get_symbol() const {
@@ -36,6 +36,7 @@ bool Mouse::has_escaped() const {
 	return escaped_;
 }
 bool Mouse::has_reached_a_hole(const Underground& ug) const {
+	// SHOULDNT THIS BE A WHILE LOOP?
 	for (int h_no(0); h_no < ug.get_holes().size(); ++h_no)
 	{
 		// this function below returns a Hole object

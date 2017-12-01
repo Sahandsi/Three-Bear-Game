@@ -14,6 +14,12 @@ int Hole::get_x() const {
 int Hole::get_y() const {
 	return y_;
 }
+
+int Hole::get_max_holes() const
+{
+	return MAXHOLES;
+}
+
 char Hole::get_symbol() const {
 	return symbol_;
 }

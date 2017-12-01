@@ -16,10 +16,10 @@
 class Mouse {
 	public:
 		//constructor
-		Mouse::Mouse();
+		Mouse();
 		//assessors
-		int get_x();
-		int get_y();
+		int get_x() const;
+		int get_y() const;
 		char get_symbol() const;
 		bool is_at_position(int x, int y) const;
 		bool is_alive() const;
@@ -29,10 +29,11 @@ class Mouse {
 		void die();
 		void escape_into_hole();
 		void scamper(char k);
-		char symbol_;
-		int  x_, y_;
+
 	private:
 		//data members
+		char symbol_;
+		int  x_, y_;
 		bool alive_;
 		bool escaped_;
 		int mouse_dx_;

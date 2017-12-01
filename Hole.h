@@ -10,11 +10,12 @@ public:
 	//assessors
 	int get_x() const;
 	int get_y() const;
+	int get_max_holes() const;
 	char get_symbol() const;
 	bool is_at_position(int x, int y) const; // private or public?
 private:
-	static const int MAXHOLES; //number of holes in underground
-							   //data members
+	 static const int MAXHOLES = 3; //number of holes in underground
+									//data members
 	char symbol_;
 	int x_, y_;
 };

@@ -30,12 +30,12 @@ public:
 	Hole get_hole_no(int no) const;
 	// new function
 	vector<Hole> get_holes() const;
-	const vector<Hole> holes_;
+
 
 private:
 	bool is_valid_hole_number(int n) const;
-	
-	
+	const vector<Hole> holes_;
+
 };
 
 #endif // !defined(UndergroundH) 
