@@ -18,12 +18,8 @@ int main()
 	
 
 	UserInterface ui;
-	Snake snake;
 	// asghar testing here 
 	Game game;
-	 
-
-	
 	game.set_up(&ui);
 	game.run();
 
