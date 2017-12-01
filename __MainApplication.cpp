@@ -20,6 +20,8 @@ int main()
 	UserInterface ui;
 	// asghar testing here 
 	Game game;
+
+
 	game.set_up(&ui);
 	game.run();
 

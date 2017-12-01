@@ -69,6 +69,7 @@ int Game::find_hole_number_at_position(int x, int y) {
 			return h_no;		//number of the hole
 	return -1;				//not a hole
 }
+
 void Game::apply_rules() {
 	if (snake_.has_caught_mouse())
 		mouse_.die();
