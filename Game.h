@@ -8,7 +8,7 @@
 
 class Game
 {
-	// THESE SHOULD BE PRIVATE
+	// THESE SHOULD BE PRIVATE AND RELATIONSHIP IMPLEMENTED CORRECTLY
 public:
 	Mouse mouse_;
 	Snake snake_;
