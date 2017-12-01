@@ -15,7 +15,7 @@ int Hole::get_y() const {
 	return y_;
 }
 
-int Hole::get_max_holes() const
+int Hole::get_max_holes()
 {
 	return MAXHOLES;
 }

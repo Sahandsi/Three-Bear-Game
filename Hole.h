@@ -10,7 +10,7 @@ public:
 	//assessors
 	int get_x() const;
 	int get_y() const;
-	int get_max_holes() const;
+	static int get_max_holes();
 	char get_symbol() const;
 	bool is_at_position(int x, int y) const; 
 private:
