@@ -7,9 +7,9 @@
 void Game::set_up(UserInterface* pui) {
 	//prepare game
 	//set up the holes
-	underground_.set_hole_no_at_position(0, 4, 3);
-	underground_.set_hole_no_at_position(1, 15, 10);
-	underground_.set_hole_no_at_position(2, 7, 15);
+	underground_.get_hole_no(0);
+	underground_.get_hole_no(1);
+	underground_.get_hole_no(2);
 	//mouse state already set up in its contructor
 	//set up snake
 	snake_.position_at_random();
@@ -64,7 +64,7 @@ bool Game::is_arrow_key_code(int keycode) {
 	return (keycode == LEFT) || (keycode == RIGHT) || (keycode == UP) || (keycode == DOWN);
 }
 int Game::find_hole_number_at_position(int x, int y) {
-	for (int h_no(0); h_no < underground_.holes_.size(); ++h_no)
+	for (int h_no(0); h_no < underground_.get_holes().size(); ++h_no)
 		if (underground_.get_hole_no(h_no).is_at_position(x, y))
 			return h_no;		//number of the hole
 	return -1;				//not a hole

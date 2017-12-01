@@ -28,9 +28,12 @@ class Underground {
 public:
 	Underground();
 	Hole get_hole_no(int no) const;
-	void set_hole_no_at_position(int no, int x, int y);
+	// new function
+	vector<Hole> get_holes() const;
+
+private:
 	bool is_valid_hole_number(int n) const;
-	vector<Hole> holes_;
+	const vector<Hole> holes_;
 };
 
 #endif // !defined(UndergroundH) 
