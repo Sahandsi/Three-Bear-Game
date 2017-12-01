@@ -25,16 +25,17 @@ using namespace std;
 
 
 class Underground {
-public:
-	Underground();
-	Hole get_hole_no(int no) const;
-	// new function
-	vector<Hole> get_holes() const;
+	public:
+		Underground();
+		Hole get_hole_no(int no) const;
+		// new function
+		vector<Hole> get_holes() const;
 
-
-private:
-	bool is_valid_hole_number(int n) const;
-	const vector<Hole> holes_;
+	private:
+		// support function
+		bool is_valid_hole_number(int n) const;
+		// vector for holes
+		const vector<Hole> holes_;
 
 };
 

@@ -17,7 +17,7 @@ class Snake {
 		void set_direction(int& dx, int& dy);
 		void position_at_random();
 		void update_position(int dx, int dy);
-		char symbol_;
+		const char symbol_;
 		int x_, y_;
 		Mouse* p_mouse_;
 		RandomNumberGenerator rng_;

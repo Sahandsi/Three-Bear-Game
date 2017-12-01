@@ -12,11 +12,11 @@ public:
 	int get_y() const;
 	int get_max_holes() const;
 	char get_symbol() const;
-	bool is_at_position(int x, int y) const; // private or public?
+	bool is_at_position(int x, int y) const; 
 private:
 	 static const int MAXHOLES = 3; //number of holes in underground
 									//data members
-	char symbol_;
+	const char symbol_;
 	int x_, y_;
 };
 
