@@ -34,10 +34,8 @@ class Mouse {
 		//data members
 		const char symbol_;
 		int  x_, y_;
-		bool alive_;
-		bool escaped_;
-		int mouse_dx_;
-		int mouse_dy_; 
+		bool alive_, escaped_;
+		int mouse_dx_, mouse_dy_;
 		//supporting functions 
 		void position_in_middle_of_grid();
 		void update_position(int dx, int dy);
