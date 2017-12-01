@@ -4,9 +4,6 @@
 #include "Underground.h"
 
 //////////////////////////////////////////////////////////////////////
-
-
-static const int MAXHOLES(3); //number of holes in underground
 Underground::Underground() : holes_{ Hole(4, 3), Hole(15, 10), Hole(7, 15) }
 {}
 
@@ -19,7 +16,8 @@ Hole Underground::get_hole_no(int no) const {
 vector<Hole> Underground::get_holes() const
 {
 	// returns each holes in the vector
-	return vector<Hole>();
+	return holes_;
+	
 }
 
 bool Underground::is_valid_hole_number(int no) const {
