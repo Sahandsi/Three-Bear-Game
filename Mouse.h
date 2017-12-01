@@ -32,7 +32,7 @@ class Mouse {
 
 	private:
 		//data members
-		char symbol_;
+		const char symbol_;
 		int  x_, y_;
 		bool alive_;
 		bool escaped_;
