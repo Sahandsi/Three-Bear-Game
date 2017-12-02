@@ -5,6 +5,11 @@
 
 
 
+Game::Game() : mouse_(), snake_(&mouse_), underground_() 
+{
+
+}
+
 void Game::set_up(UserInterface* pui) {
 	//prepare game
 	////set up the holes
@@ -13,8 +18,8 @@ void Game::set_up(UserInterface* pui) {
 	//underground_.get_hole_no(2);
 	//mouse state already set up in its contructor
 	//set up snake
-	snake_.position_at_random();
-	snake_.spot_mouse(&mouse_);
+	/*snake_.position_at_random();
+	snake_.spot_mouse(&mouse_);*/
 	//set up the UserInterface
 	p_ui = pui;
 }

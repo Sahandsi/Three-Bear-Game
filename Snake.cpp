@@ -12,11 +12,7 @@
 // WHAT DOES THIS DO?
 RandomNumberGenerator Snake::rng_;
 
-Snake::Snake() 
-{
-	position_at_random();
-	p_mouse_ = nullptr;
-}
+
 
 Snake::Snake(Mouse* mp) :  p_mouse_(mp)
 {

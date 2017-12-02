@@ -13,6 +13,7 @@ public:
 	
 	
 	int key_;
+	Game();
 	void set_up(UserInterface* pui);
 	void run();
 	string prepare_grid();

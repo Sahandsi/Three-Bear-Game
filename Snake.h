@@ -8,9 +8,6 @@
 
 class Snake {
 	public:
-		
-		// remove this when you sort out the game class
-		Snake();
 		Snake(Mouse * mp);
 		bool is_at_position(int x, int y) const;  
 		bool has_caught_mouse() const ;
