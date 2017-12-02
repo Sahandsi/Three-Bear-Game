@@ -22,6 +22,14 @@ int main()
 		fout << game;	//insertion operator<< for Game instances
 	fout.close();
 
+	ifstream fin;
+	fin.open("Game.txt", ios::in);
+	if (fin.fail())
+		cout << "\nAn error has occurred when opening the file.";
+	else
+		fin >> game; 	//extraction operator>> for Game instances
+	fin.close();
+
 
 	/*game.run();*/
 

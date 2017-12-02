@@ -4,10 +4,12 @@
 
 #include <fstream>
 
+
 #include "Snake.h"
 #include "Mouse.h"
 #include "Underground.h"
 #include "UserInterface.h"
+
 
 class Game
 {
@@ -22,6 +24,8 @@ public:
 	bool has_ended(char key) const;
 	string prepare_end_message() const;
 	string save_game() const;
+	void load_game(ifstream&);
+	
 
 private:
 	Mouse mouse_;
@@ -32,6 +36,6 @@ private:
 };
 
 void operator<<(ofstream&, const Game&);
-void operator>>(ifstream&, const Game&);
+void operator>>(ifstream&, Game&);
 
 #endif

@@ -1,6 +1,6 @@
 #include <sstream> // for os
+#include <iostream>
 #include "Game.h"
-
 
 
 Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui)
@@ -92,14 +92,33 @@ string Game::save_game() const
 	return ss.str();
 }
 
+void Game::load_game(ifstream& fin)
+{
+	if (fin.is_open())
+	{
+		//string line;
+		//// how to read values for mouse x,y and snake x,y since they're private
+		//getline(fin, line);
+		//// then you could store this value as integer into 1 of the co-ordinates
+		//std::cout << atoi(line.c_str());
+		//// repeat until all lines have been read
+		//getline(fin, line);
+		//std::cout << atoi(line.c_str());
+		fin.close();
+	}
+	
+}
+
 //for output: save game into file 
 void operator<<(ofstream& fout, const Game& game)
 {
 	fout << game.save_game();
+	
 }
 
 //for input: read game from file
-void operator>>(ifstream& fin, const Game& game)
+void operator>>(ifstream& fin, Game& game)
 {
-	
+	game.load_game(fin);
 }
+
