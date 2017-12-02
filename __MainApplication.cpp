@@ -14,7 +14,16 @@ int main()
 	UserInterface ui;
 	// asghar testing here 
 	Game game(&ui);
-	game.run();
+	ofstream fout;
+	fout.open("Game.txt", ios::out);
+	if (fout.fail())
+		cout << "\nAn error has occurred when opening the file.";
+	else
+		fout << game;	//insertion operator<< for Game instances
+	fout.close();
+
+
+	/*game.run();*/
 
 	ui.hold_window();
 	return 0;

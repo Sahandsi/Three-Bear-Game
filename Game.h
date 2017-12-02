@@ -21,7 +21,8 @@ public:
 	int find_hole_number_at_position(int x, int y) const ;
 	bool has_ended(char key) const;
 	string prepare_end_message() const;
-	
+	string get_snake_x_and_y() const ;
+	string get_mouse_x_and_y() const;
 
 private:
 	Mouse mouse_;
@@ -31,7 +32,7 @@ private:
 	int key_;
 };
 
-ofstream operator<<(ofstream&, const Game&);
-ifstream operator>>(ifstream&, const Game&);
+void operator<<(ofstream&, const Game&);
+void operator>>(ifstream&, const Game&);
 
 #endif

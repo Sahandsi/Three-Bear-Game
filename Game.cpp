@@ -81,12 +81,26 @@ string Game::prepare_end_message() const {
 	return os.str();
 }
 
-ofstream operator<<(ofstream& fout, const Game& game)
+string Game::get_snake_x_and_y() const
 {
-	
+	return snake_.get_x() + " " + snake_.get_y();
 }
 
-ifstream operator>>(ifstream& fin, const Game& game)
+string Game::get_mouse_x_and_y() const
 {
-	
+	return mouse_.get_x() + " " + mouse_.get_y();
+}
+
+//for output: save game into file 
+void operator<<(ofstream& fout, const Game& game)
+{
+	stringstream ss;
+	ss << game.get_mouse_x_and_y() << game.get_snake_x_and_y();
+	fout << ss.str();
+}
+
+//for input: read game from file
+void operator>>(ifstream& fin, const Game& game)
+{
+	/*fin >> game.get_mouse_x_and_y() + " " + game.get_snake_x_and_y();*/
 }
