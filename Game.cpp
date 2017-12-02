@@ -5,24 +5,10 @@
 
 
 
-Game::Game() : mouse_(), snake_(&mouse_), underground_() 
-{
+Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui)
+{}
 
-}
 
-void Game::set_up(UserInterface* pui) {
-	//prepare game
-	////set up the holes
-	//underground_.get_hole_no(0);
-	//underground_.get_hole_no(1);
-	//underground_.get_hole_no(2);
-	//mouse state already set up in its contructor
-	//set up snake
-	/*snake_.position_at_random();
-	snake_.spot_mouse(&mouse_);*/
-	//set up the UserInterface
-	p_ui = pui;
-}
 void Game::run() {
 	assert(p_ui != nullptr);
 	p_ui->draw_grid_on_screen(prepare_grid());

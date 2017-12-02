@@ -13,8 +13,7 @@ public:
 	
 	
 	int key_;
-	Game();
-	void set_up(UserInterface* pui);
+	Game(UserInterface* p_ui);
 	void run();
 	string prepare_grid();
 	bool is_arrow_key_code(int keycode);
