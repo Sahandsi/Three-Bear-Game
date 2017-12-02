@@ -22,13 +22,27 @@ Snake::Snake(Mouse* mp) :  p_mouse_(mp)
 {
 	position_at_random();
 }
-Snake::~Snake()
-{}
+
 bool Snake::is_at_position(int x, int y) const {
 	return (x_ == x) && (y_ == y);
 }
 bool Snake::has_caught_mouse() const {
 	return is_at_position(p_mouse_->get_x(), p_mouse_->get_y());
+}
+
+int Snake::get_x() const
+{
+	return x_;
+}
+
+int Snake::get_y() const
+{
+	return y_;
+}
+
+char Snake::get_symbol() const
+{
+	return symbol_;
 }
 
 void Snake::spot_mouse(Mouse* p_mouse) {
@@ -67,10 +81,5 @@ void Snake::update_position(int dx, int dy) {
 void Snake::position_at_random() {
 	x_ = rng_.get_random_value(SIZE);        //WARNING: may fall on mouse
 	y_ = rng_.get_random_value(SIZE);
-	//// get random values again if the snake x and y fall on mouse
-	//while (x_ == p_mouse_->get_x() && y_ == p_mouse_->get_y())
-	//{
-	//	x_ = rng_.get_random_value(SIZE);
-	//}
 	
 }

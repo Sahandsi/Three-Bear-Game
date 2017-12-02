@@ -4,12 +4,13 @@
 #include "Snake.h"
 
 
+
 void Game::set_up(UserInterface* pui) {
 	//prepare game
-	//set up the holes
-	underground_.get_hole_no(0);
-	underground_.get_hole_no(1);
-	underground_.get_hole_no(2);
+	////set up the holes
+	//underground_.get_hole_no(0);
+	//underground_.get_hole_no(1);
+	//underground_.get_hole_no(2);
 	//mouse state already set up in its contructor
 	//set up snake
 	snake_.position_at_random();
@@ -41,8 +42,8 @@ string Game::prepare_grid() {
 	{
 		for (int col(1); col <= SIZE; ++col)	//for each column (horizontally)
 		{
-			if ((row == snake_.y_) && (col == snake_.x_))
-				os << snake_.symbol_;	//show snake
+			if ((row == snake_.get_y()) && (col == snake_.get_x()))
+				os << snake_.get_symbol();	//show snake
 			else
 				if ((row == mouse_.get_y()) && (col == mouse_.get_x()))
 					os << mouse_.get_symbol();	//show mouse
@@ -91,3 +92,5 @@ string Game::prepare_end_message() {
 			os << "\n\nEND OF GAME: THE PLAYER ENDED THE GAME!";
 	return os.str();
 }
+
+
