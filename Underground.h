@@ -16,11 +16,10 @@
 #if !defined(UndergroundH)
 #define UndergroundH
 
-#include <cassert>
+
 #include <vector>
 using namespace std;
 
-#include "constants.h"
 #include "Hole.h"
 
 

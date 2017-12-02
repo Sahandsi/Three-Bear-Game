@@ -2,8 +2,10 @@
 #if !defined(GameH)
 #define GameH
 
-#include "Mouse.h"
+
 #include "Snake.h"
+#include "Mouse.h"
+#include "Underground.h"
 #include "UserInterface.h"
 
 class Game
@@ -19,7 +21,6 @@ public:
 	bool has_ended(char key) const;
 	string prepare_end_message() const ;
 
-	// how to run the snake constructor which takes a mouse pointer?
 private:
 	Mouse mouse_;
 	Snake snake_;
@@ -27,5 +28,4 @@ private:
 	UserInterface* p_ui;
 	int key_;
 };
-
 #endif

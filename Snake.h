@@ -4,6 +4,7 @@
 #define SnakeH
 
 #include "Mouse.h"
+#include "constants.h"
 #include "RandomNumberGenerator.h"
 
 class Snake {

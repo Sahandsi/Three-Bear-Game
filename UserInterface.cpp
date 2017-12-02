@@ -1,5 +1,6 @@
 #include "UserInterface.h" 
 #include <conio.h>		//for _getch()
+#include <iostream>		//for output and input: cout << and cin >>
 
 int UserInterface::get_keypress_from_user() const {
 //get key or command selected by user

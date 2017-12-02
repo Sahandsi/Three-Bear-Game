@@ -1,7 +1,5 @@
 #include <sstream> // for os
 #include "Game.h"
-#include "Underground.h"
-#include "Snake.h"
 
 
 

@@ -11,7 +11,7 @@
 #define UserInterfaceH
 
 //include standard libraries
-#include <iostream>		//for output and input: cout << and cin >>
+
 #include <string>		//for string
 using namespace std;
 

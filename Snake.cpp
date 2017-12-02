@@ -3,8 +3,6 @@
 
 //////////////////////////////////////////////////////////////////////
 #include "constants.h"
-#include "Mouse.h"
-#include "RandomNumberGenerator.h"
 #include "Snake.h"
 // EXAMNPLE CHANGE
 
