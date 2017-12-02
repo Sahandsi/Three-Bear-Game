@@ -36,11 +36,13 @@ bool Mouse::has_escaped() const {
 	return escaped_;
 }
 bool Mouse::has_reached_a_hole(const Underground& ug) const {
-	// SHOULDNT THIS BE A WHILE LOOP?
-	for (int h_no(0); h_no < ug.get_holes().size(); ++h_no)
+	
+	int h_no(0);
+	while (h_no < ug.get_holes().size())
 	{
 		if (is_at_position(ug.get_hole_no(h_no).get_x(), ug.get_hole_no(h_no).get_y()))
 			return true;
+		++h_no;
 	}
 	return false;
 }
