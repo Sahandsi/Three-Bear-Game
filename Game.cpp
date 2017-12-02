@@ -88,19 +88,19 @@ string Game::get_snake_x_and_y() const
 
 string Game::get_mouse_x_and_y() const
 {
-	return mouse_.get_x() + " " + mouse_.get_y();
+	stringstream ss;
+	ss << mouse_.get_x() << "\n" << mouse_.get_y();
+	return ss.str();
 }
 
 //for output: save game into file 
 void operator<<(ofstream& fout, const Game& game)
 {
-	stringstream ss;
-	ss << game.get_mouse_x_and_y() << game.get_snake_x_and_y();
-	fout << ss.str();
+	fout << game.get_mouse_x_and_y();
 }
 
 //for input: read game from file
 void operator>>(ifstream& fin, const Game& game)
 {
-	/*fin >> game.get_mouse_x_and_y() + " " + game.get_snake_x_and_y();*/
+	
 }

@@ -1,4 +1,5 @@
-﻿  Game.cpp
-c:\users\home\documents\github\oop-mouse-snake\game.cpp(91): error C2297: '<<': illegal, right operand has type 'const char [2]'
-c:\users\home\documents\github\oop-mouse-snake\game.cpp(91): error C2440: 'return': cannot convert from 'int' to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  c:\users\home\documents\github\oop-mouse-snake\game.cpp(91): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+﻿  __MainApplication.cpp
+  Game.cpp
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1202,5): warning MSB8030: The linker switch "Minimum Required Version" requires "SubSystem" to be set.  Without "SubSystem", the "Minimum Required Version" would not be passed to linker and could prevent to the output binary from running on older Operating Systems.
+  OOPProject.vcxproj -> C:\Users\Home\Documents\GitHub\oop-mouse-snake\x64\Debug\OOPProject.exe
