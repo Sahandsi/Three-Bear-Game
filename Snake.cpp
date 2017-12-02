@@ -8,13 +8,17 @@
 #include "Snake.h"
 // EXAMNPLE CHANGE
 
-Snake::Snake() : rng_()
+
+// WHAT DOES THIS DO?
+RandomNumberGenerator Snake::rng_;
+
+Snake::Snake() 
 {
 	position_at_random();
 	p_mouse_ = nullptr;
 }
 
-Snake::Snake(Mouse* mp) : rng_(), p_mouse_(mp)
+Snake::Snake(Mouse* mp) :  p_mouse_(mp)
 {
 	position_at_random();
 }
@@ -63,4 +67,10 @@ void Snake::update_position(int dx, int dy) {
 void Snake::position_at_random() {
 	x_ = rng_.get_random_value(SIZE);        //WARNING: may fall on mouse
 	y_ = rng_.get_random_value(SIZE);
+	//// get random values again if the snake x and y fall on mouse
+	//while (x_ == p_mouse_->get_x() && y_ == p_mouse_->get_y())
+	//{
+	//	x_ = rng_.get_random_value(SIZE);
+	//}
+	
 }

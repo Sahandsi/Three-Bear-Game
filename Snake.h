@@ -25,7 +25,7 @@ class Snake {
 		int x_, y_;
 	private:
 		Mouse* p_mouse_;
-		RandomNumberGenerator rng_;
+		static RandomNumberGenerator rng_;
 };
 
 #endif // !defined(SnakeH)
