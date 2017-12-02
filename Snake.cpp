@@ -8,13 +8,13 @@
 #include "Snake.h"
 // EXAMNPLE CHANGE
 
-Snake::Snake()
+Snake::Snake() : rng_()
 {
 	position_at_random();
 	p_mouse_ = nullptr;
 }
 
-Snake::Snake(Mouse* mp) : p_mouse_(mp)
+Snake::Snake(Mouse* mp) : rng_(), p_mouse_(mp)
 {
 	position_at_random();
 }
