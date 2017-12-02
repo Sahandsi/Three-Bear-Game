@@ -20,10 +20,10 @@ Snake::Snake(Mouse* mp) : rng_(), p_mouse_(mp)
 }
 Snake::~Snake()
 {}
-bool Snake::is_at_position(int x, int y) {
+bool Snake::is_at_position(int x, int y) const {
 	return (x_ == x) && (y_ == y);
 }
-bool Snake::has_caught_mouse() {
+bool Snake::has_caught_mouse() const {
 	return is_at_position(p_mouse_->get_x(), p_mouse_->get_y());
 }
 
