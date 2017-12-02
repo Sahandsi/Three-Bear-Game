@@ -81,22 +81,21 @@ string Game::prepare_end_message() const {
 	return os.str();
 }
 
-string Game::get_snake_x_and_y() const
-{
-	return snake_.get_x() + " " + snake_.get_y();
-}
 
-string Game::get_mouse_x_and_y() const
+
+string Game::save_game() const
 {
 	stringstream ss;
-	ss << mouse_.get_x() << "\n" << mouse_.get_y();
+	// convert integer to string and store in file
+	ss << mouse_.get_x() << "\n" << mouse_.get_y()
+	<< "\n" << snake_.get_x() << "\n" << snake_.get_y();
 	return ss.str();
 }
 
 //for output: save game into file 
 void operator<<(ofstream& fout, const Game& game)
 {
-	fout << game.get_mouse_x_and_y();
+	fout << game.save_game();
 }
 
 //for input: read game from file

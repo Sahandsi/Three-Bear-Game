@@ -21,8 +21,7 @@ public:
 	int find_hole_number_at_position(int x, int y) const ;
 	bool has_ended(char key) const;
 	string prepare_end_message() const;
-	string get_snake_x_and_y() const ;
-	string get_mouse_x_and_y() const;
+	string save_game() const;
 
 private:
 	Mouse mouse_;
