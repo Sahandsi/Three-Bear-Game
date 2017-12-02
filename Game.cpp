@@ -81,4 +81,12 @@ string Game::prepare_end_message() const {
 	return os.str();
 }
 
+ofstream operator<<(ofstream& fout, const Game& game)
+{
+	
+}
 
+ifstream operator>>(ifstream& fin, const Game& game)
+{
+	
+}

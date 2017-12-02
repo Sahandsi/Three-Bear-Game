@@ -2,6 +2,7 @@
 #if !defined(GameH)
 #define GameH
 
+#include <fstream>
 
 #include "Snake.h"
 #include "Mouse.h"
@@ -19,7 +20,8 @@ public:
 	void apply_rules();
 	int find_hole_number_at_position(int x, int y) const ;
 	bool has_ended(char key) const;
-	string prepare_end_message() const ;
+	string prepare_end_message() const;
+	
 
 private:
 	Mouse mouse_;
@@ -28,4 +30,8 @@ private:
 	UserInterface* p_ui;
 	int key_;
 };
+
+ofstream operator<<(ofstream&, const Game&);
+ifstream operator>>(ifstream&, const Game&);
+
 #endif
