@@ -8,7 +8,6 @@
 Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui)
 {}
 
-
 void Game::run() {
 	assert(p_ui != nullptr);
 	p_ui->draw_grid_on_screen(prepare_grid());
@@ -26,7 +25,7 @@ void Game::run() {
 	}
 	p_ui->show_results_on_screen(prepare_end_message());
 }
-string Game::prepare_grid() {
+string Game::prepare_grid() const {
 	//prepare a string that holds the grid information
 	ostringstream os;
 	for (int row(1); row <= SIZE; ++row)	//for each row (vertically)
@@ -52,10 +51,10 @@ string Game::prepare_grid() {
 	return os.str();
 } //end prepare_grid
 
-bool Game::is_arrow_key_code(int keycode) {
+bool Game::is_arrow_key_code(int keycode) const {
 	return (keycode == LEFT) || (keycode == RIGHT) || (keycode == UP) || (keycode == DOWN);
 }
-int Game::find_hole_number_at_position(int x, int y) {
+int Game::find_hole_number_at_position(int x, int y) const {
 	for (int h_no(0); h_no < underground_.get_holes().size(); ++h_no)
 		if (underground_.get_hole_no(h_no).is_at_position(x, y))
 			return h_no;		//number of the hole
@@ -69,10 +68,10 @@ void Game::apply_rules() {
 		if (mouse_.has_reached_a_hole(underground_))
 			mouse_.escape_into_hole();
 }
-bool Game::has_ended(char key) {
+bool Game::has_ended(char key) const {
 	return ((key == 'Q') || (!mouse_.is_alive()) || (mouse_.has_escaped()));
 }
-string Game::prepare_end_message() {
+string Game::prepare_end_message() const {
 	ostringstream os;
 	if (mouse_.has_escaped())
 		os << "\n\nEND OF GAME: THE MOUSE ESCAPED UNDERGROUND!";

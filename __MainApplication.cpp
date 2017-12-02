@@ -14,7 +14,6 @@ int main()
 	UserInterface ui;
 	// asghar testing here 
 	Game game(&ui);
-
 	game.run();
 
 	ui.hold_window();
