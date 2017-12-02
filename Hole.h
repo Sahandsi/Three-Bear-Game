@@ -1,6 +1,6 @@
 #ifndef HoleH
 #define HoleH
-
+#include "constants.h"
 
 class Hole {
 public:
@@ -16,7 +16,7 @@ public:
 private:
 	 static const int MAXHOLES = 3; //number of holes in underground
 									//data members
-	const char symbol_;
+	const char symbol_ = HOLE;
 	int x_, y_;
 };
 

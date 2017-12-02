@@ -1,12 +1,9 @@
 #include "Hole.h"
-#include "constants.h"
+
 
 Hole::Hole() 
 {}
-Hole::Hole(int x, int y)
-	: symbol_(HOLE),
-	x_(x),
-	y_(y)
+Hole::Hole(int x, int y) : x_(x), y_(y)
 {}
 int Hole::get_x() const {
 	return x_;
