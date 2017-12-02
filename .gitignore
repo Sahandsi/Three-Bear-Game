@@ -259,3 +259,26 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+*.obj
+*.obj
+*.obj
+*.exe
+*.ilk
+*.log
+*.pdb
+*.tlog
+*.tlog
+*.pdb
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.tlog
+*.lastbuildstate
+*.obj
+*.obj
+*.obj
+*.obj
+*.idb
+*.pdb
