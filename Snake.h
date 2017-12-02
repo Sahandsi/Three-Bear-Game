@@ -8,7 +8,11 @@
 
 class Snake {
 	public:
+		
+		// remove this when you sort out the game class
 		Snake();
+
+		Snake(Mouse * mp);
 		~Snake();
 		bool is_at_position(int x, int y);  
 		bool has_caught_mouse() ;
@@ -19,6 +23,7 @@ class Snake {
 		void update_position(int dx, int dy);
 		const char symbol_ = SNAKEHEAD;
 		int x_, y_;
+	private:
 		Mouse* p_mouse_;
 		RandomNumberGenerator rng_;
 };

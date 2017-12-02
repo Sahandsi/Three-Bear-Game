@@ -11,7 +11,12 @@
 Snake::Snake()
 {
 	position_at_random();
-	p_mouse_ = nullptr; //to make the pointer is safe before the snake spots the mouse
+	p_mouse_ = nullptr;
+}
+
+Snake::Snake(Mouse* mp) : p_mouse_(mp)
+{
+	position_at_random();
 }
 Snake::~Snake()
 {}
