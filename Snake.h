@@ -15,7 +15,6 @@ class Snake {
 		int get_x() const;
 		int get_y() const;
 		char get_symbol() const;
-		void spot_mouse(Mouse* p_mouse);
 		void chase_mouse();
 		void set_direction(int& dx, int& dy);
 		void position_at_random();

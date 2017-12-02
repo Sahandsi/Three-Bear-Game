@@ -39,10 +39,7 @@ char Snake::get_symbol() const
 	return symbol_;
 }
 
-void Snake::spot_mouse(Mouse* p_mouse) {
-	assert(p_mouse != nullptr);	 //Pre-condition: The mouse needs to exist 
-	p_mouse_ = p_mouse;
-}
+
 void Snake::chase_mouse() {	 
 	int snake_dx, snake_dy;
 	//identify direction of travel
