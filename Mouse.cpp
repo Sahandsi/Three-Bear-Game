@@ -85,8 +85,8 @@ void Mouse::scamper(char k) { //move mouse in required direction
 void Mouse::set_position(int dx, int dy)
 {
 	//update mouse coordinates if possible (GET THIS CHECKED)
-	if (((mouse_dx_) >= 1) && ((mouse_dx_) <= SIZE) &&
-		((mouse_dy_) >= 1) && ((mouse_dy_) <= SIZE))
+	if (((dx) >= 1) && ((dy) <= SIZE) &&
+		((dx) >= 1) && ((dy) <= SIZE))
 	{
 		x_ = dx;
 		y_ = dy;
