@@ -94,18 +94,28 @@ string Game::save_game() const
 
 void Game::load_game(ifstream& fin)
 {
+	int mouseDX, mouseDY, snakeDX, snakeDY;
 	if (fin.is_open())
 	{
-		//string line;
-		//// how to read values for mouse x,y and snake x,y since they're private
-		//getline(fin, line);
-		//// then you could store this value as integer into 1 of the co-ordinates
-		//std::cout << atoi(line.c_str());
-		//// repeat until all lines have been read
-		//getline(fin, line);
-		//std::cout << atoi(line.c_str());
+		string line;
+		
+		// x value for mouse stored in file
+		getline(fin, line);
+		mouseDX = atoi(line.c_str());
+		
+		// y value for mouse stored in file
+		getline(fin, line);
+		mouseDY = atoi(line.c_str());
+
+		getline(fin, line);
+		snakeDX = atoi(line.c_str());
+
+		getline(fin, line);
+		snakeDY = atoi(line.c_str());
 		fin.close();
 	}
+	
+
 	
 }
 
