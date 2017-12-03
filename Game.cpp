@@ -108,13 +108,13 @@ void Game::load_game(ifstream& fin)
 		mouseDY = atoi(line.c_str());
 
 		getline(fin, line);
-		snakeDX = atoi(line.c_str());
+		snakeDX = atoi(line.c_str()) - snake_.get_x();
 
 		getline(fin, line);
-		snakeDY = atoi(line.c_str());
+		snakeDY = atoi(line.c_str()) - snake_.get_y();
 		
 		// set the position of the snake to be the same as x and y from the txt file
-		snake_.update_position(snakeDX - snake_.get_x(), snakeDY - snake_.get_y());
+		snake_.update_position(snakeDX, snakeDY);
 
 		fin.close();
 	}
