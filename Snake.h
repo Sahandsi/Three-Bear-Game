@@ -16,7 +16,6 @@ class Snake {
 		int get_y() const;
 		char get_symbol() const;
 		void chase_mouse();
-		void set_direction(int& dx, int& dy);
 		void position_at_random();
 		void update_position(int dx, int dy);
 
@@ -25,6 +24,7 @@ class Snake {
 		static RandomNumberGenerator rng_;
 		const char symbol_ = SNAKEHEAD;
 		int x_, y_;
+		void set_direction(int& dx, int& dy);
 };
 
 #endif // !defined(SnakeH)
