@@ -29,6 +29,9 @@ class Mouse {
 		void die();
 		void escape_into_hole();
 		void scamper(char k);
+		// used to set position from the file and includes checks to make sure
+		// position is valid
+		void set_position(int dx, int dy);
 
 	private:
 		//data members

@@ -75,10 +75,21 @@ void Mouse::scamper(char k) { //move mouse in required direction
 			break;
 	}
 	//update mouse coordinates if move is possible
-	if (((x_ + mouse_dx_) >= 1) && ((x_ + mouse_dx_) <= SIZE) &&
+	if (((mouse_dx_) >= 1) && ((mouse_dx_) <= SIZE) &&
 		 ((y_ + mouse_dy_) >= 1) && ((y_ + mouse_dy_) <= SIZE) )
 	{
 		update_position(mouse_dx_, mouse_dy_);		//go in that direction
+	}
+}
+
+void Mouse::set_position(int dx, int dy)
+{
+	//update mouse coordinates if possible (GET THIS CHECKED)
+	if (((mouse_dx_) >= 1) && ((mouse_dx_) <= SIZE) &&
+		((mouse_dy_) >= 1) && ((mouse_dy_) <= SIZE))
+	{
+		x_ = dx;
+		y_ = dy;
 	}
 }
 

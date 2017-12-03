@@ -74,3 +74,11 @@ void Snake::position_at_random() {
 	y_ = rng_.get_random_value(SIZE);
 	
 }
+
+void Snake::set_position(int dx, int dy)
+{
+	// set the new position for the snake
+	// MAKE SURE THIS IS CHECKED WITH OTHER OBJECTS SUCH AS MOUSE, HOLE ETC
+	x_ = dx;
+	y_ = dy;
+}

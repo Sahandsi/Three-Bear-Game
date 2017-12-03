@@ -17,6 +17,7 @@ class Snake {
 		char get_symbol() const;
 		void chase_mouse();
 		void position_at_random();
+		void set_position(int dx, int dy);
 		void update_position(int dx, int dy);
 
 	private:
