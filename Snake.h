@@ -18,11 +18,16 @@ class Snake {
 			: x_(x), y_(y), symbol_(symbol) {}
 		int x_, y_;
 		char symbol_;
+		bool is_at_position(int x, int y) const
+		{
+			 return (x_ == x) && (y_ == y);
+		}
 	};
 
 	public:
 		Snake(Mouse * mp);
-		bool is_at_position(int x, int y) const;  
+		bool is_at_position(int x, int y) const; 
+		bool is_tail_at_position(int x, int y) const;
 		bool has_caught_mouse() const ;
 		int get_x() const;
 		int get_y() const;
@@ -41,6 +46,7 @@ class Snake {
 		const char symbol_ = SNAKEHEAD;
 		const char tail_symbol = SNAKEBODY;
 		int x_, y_;
+		int snakeIndex_;
 		void set_direction(int& dx, int& dy);
 };
 

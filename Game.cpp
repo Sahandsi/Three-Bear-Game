@@ -30,8 +30,18 @@ string Game::prepare_grid() const {
 	{
 		for (int col(1); col <= SIZE; ++col)	//for each column (horizontally)
 		{
-			if ((row == snake_.get_y()) && (col == snake_.get_x()))
+			if ((row == snake_.get_y()) && (col == snake_.get_x())) 
+			{
+				// draw the snake head last so that head appears first on grid
 				os << snake_.get_symbol();	//show snake
+			}
+			else 
+				// check if tail is at position
+				if (snake_.is_tail_at_position(col, row))
+				{
+					// draw a piece of tail
+					os << snake_.get_tail_symbol();
+				}
 			else
 				if ((row == mouse_.get_y()) && (col == mouse_.get_x()))
 					os << mouse_.get_symbol();	//show mouse

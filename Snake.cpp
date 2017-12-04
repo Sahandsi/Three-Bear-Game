@@ -11,13 +11,28 @@
 RandomNumberGenerator Snake::rng_;
 
 
-Snake::Snake(Mouse* mp) : p_mouse_(mp), tails_ {Tail(4, 3, SNAKEBODY), Tail(15, 10, SNAKEBODY), Tail(7, 15, SNAKEBODY) }
+Snake::Snake(Mouse* mp) : p_mouse_(mp), snakeIndex_(0)
 {
 	position_at_random();
+	tails_.push_back(Tail(x_, y_, SNAKEBODY));
+	tails_.push_back(Tail(x_, y_, SNAKEBODY));
+	tails_.push_back(Tail(x_, y_, SNAKEBODY));
 }
 
 bool Snake::is_at_position(int x, int y) const {
 	return (x_ == x) && (y_ == y);
+}
+bool Snake::is_tail_at_position(int x, int y) const
+{
+	// if any tails at this position is true....
+	for (int i = 0; i < tails_.size(); i++)
+	{
+		if (tails_.at(i).is_at_position(x, y))
+		{
+			return true;
+		}
+	}
+	return false;
 }
 bool Snake::has_caught_mouse() const {
 	return is_at_position(p_mouse_->get_x(), p_mouse_->get_y());
@@ -45,12 +60,23 @@ char Snake::get_tail_symbol() const
 
 void Snake::move_tail()
 {
-	/* set the head to be a tail
-	tails_.at(0).symbol_ = get_tail_symbol();
-	 push the head to the start of the vector
-	tails_.insert(tails_.begin(), SNAKEHEAD);
-	 remove the last tail
-	tails_.pop_back();*/
+	
+	tails_[snakeIndex_].x_ = x_;
+	tails_[snakeIndex_].y_ = y_;
+
+	snakeIndex_++;
+	if (snakeIndex_ >= tails_.size())
+	{
+		// prevents out of bound exception
+		snakeIndex_ = 0;
+	}
+
+	//set the head to be a tail
+	//tails_.at(0).symbol_ = get_tail_symbol();
+	////push the head symbol to the start of the vector
+	//tails_.insert(tails_.begin(), 0, Tail(get_x(), get_y(), get_symbol()));
+	////remove the last tail
+	//tails_.pop_back();
 	
 }
 
@@ -59,6 +85,7 @@ void Snake::chase_mouse() {
 	int snake_dx, snake_dy;
 	//identify direction of travel
 	set_direction(snake_dx, snake_dy);
+	move_tail();
 	//go in that direction
 	update_position(snake_dx, snake_dy);
 }
