@@ -33,7 +33,6 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Hole.h" />
     <ClInclude Include="Snake.h" />
-    <ClInclude Include="Tail.h" />
     <ClInclude Include="UserInterface.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="RandomNumberGenerator.h" />

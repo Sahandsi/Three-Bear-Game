@@ -7,7 +7,19 @@
 #include "constants.h"
 #include "RandomNumberGenerator.h"
 
+
+
+
 class Snake {
+
+	struct Tail
+	{
+		Tail(const int x, const int y, char symbol)
+			: x_(x), y_(y), symbol_(symbol) {}
+		int x_, y_;
+		char symbol_;
+	};
+
 	public:
 		Snake(Mouse * mp);
 		bool is_at_position(int x, int y) const;  
@@ -24,7 +36,7 @@ class Snake {
 
 	private:
 		const Mouse* p_mouse_;
-		vector<Snake> tails_;
+		vector<Tail> tails_;
 		static RandomNumberGenerator rng_;
 		const char symbol_ = SNAKEHEAD;
 		const char tail_symbol = SNAKEBODY;

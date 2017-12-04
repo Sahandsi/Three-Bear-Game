@@ -11,7 +11,7 @@
 RandomNumberGenerator Snake::rng_;
 
 
-Snake::Snake(Mouse* mp) : p_mouse_(mp)
+Snake::Snake(Mouse* mp) : p_mouse_(mp), tails_ {Tail(4, 3, SNAKEBODY), Tail(15, 10, SNAKEBODY), Tail(7, 15, SNAKEBODY) }
 {
 	position_at_random();
 }
