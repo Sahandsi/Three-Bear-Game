@@ -90,6 +90,7 @@ string Game::save_game() const
 	ss << mouse_.get_x() << "\n" << mouse_.get_y()
 	<< "\n" << snake_.get_x() << "\n" << snake_.get_y();
 	return ss.str();
+	
 }
 
 void Game::load_game(ifstream& fin)
@@ -129,6 +130,8 @@ void Game::load_game(ifstream& fin)
 void operator<<(ofstream& fout, const Game& game)
 {
 	fout << game.save_game();
+	
+
 	
 }
 

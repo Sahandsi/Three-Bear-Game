@@ -15,6 +15,8 @@ class Snake {
 		int get_x() const;
 		int get_y() const;
 		char get_symbol() const;
+		char get_tail_symbol() const;
+		void move_tail();
 		void chase_mouse();
 		void position_at_random();
 		void set_position(int dx, int dy);
@@ -22,8 +24,10 @@ class Snake {
 
 	private:
 		const Mouse* p_mouse_;
+		vector<Snake> tails_;
 		static RandomNumberGenerator rng_;
 		const char symbol_ = SNAKEHEAD;
+		const char tail_symbol = SNAKEBODY;
 		int x_, y_;
 		void set_direction(int& dx, int& dy);
 };
