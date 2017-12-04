@@ -60,7 +60,8 @@ char Snake::get_tail_symbol() const
 
 void Snake::move_tail()
 {
-	
+	// set the tail to be the same as head x and y to follow it
+	// this function is done before the snake head movement to make this work
 	tails_[snakeIndex_].x_ = x_;
 	tails_[snakeIndex_].y_ = y_;
 
