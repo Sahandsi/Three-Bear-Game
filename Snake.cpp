@@ -9,7 +9,6 @@
 
 // WHAT DOES THIS DO?
 RandomNumberGenerator Snake::rng_;
-Snake::Snake()
 
 
 Snake::Snake(Mouse* mp) : p_mouse_(mp)
@@ -46,12 +45,12 @@ char Snake::get_tail_symbol() const
 
 void Snake::move_tail()
 {
-	// set the head to be a tail
+	/* set the head to be a tail
 	tails_.at(0).symbol_ = get_tail_symbol();
-	// push the head to the start of the vector
+	 push the head to the start of the vector
 	tails_.insert(tails_.begin(), SNAKEHEAD);
-	// remove the last tail
-	tails_.pop_back();
+	 remove the last tail
+	tails_.pop_back();*/
 	
 }
 
