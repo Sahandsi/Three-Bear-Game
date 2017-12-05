@@ -12,6 +12,7 @@ int main()
 {
 
 	UserInterface ui;
+	// ask for name of string (pass string as const reference )
 	// asghar testing here 
 	Game game(&ui);
 	//ofstream fout;
@@ -23,7 +24,7 @@ int main()
 	//fout.close();
 
 	//ifstream fin;
-	//fin.open("Game.txt", ios::in);
+	//fin.open("Game c.txt", ios::in);
 	//if (fin.fail())
 	//	cout << "\nAn error has occurred when opening the file.";
 	//else

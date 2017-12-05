@@ -3,7 +3,7 @@
 #include "Game.h"
 
 
-Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui)
+Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui), player_(//ui read player name)
 {}
 
 void Game::run() {
