@@ -24,6 +24,10 @@ int main()
 		Game game(&ui, name);
 		game.run();
 		play_again = game.play_again();
+		if (play_again == false)
+		{
+			game.prepare_end_message();
+		}
 	} while (play_again == true);
 	
 

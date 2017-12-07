@@ -9,30 +9,27 @@ Game::Game(UserInterface* pui, string name) : mouse_(), snake_(&mouse_), undergr
 
 void Game::run() {
 	assert(p_ui != nullptr);
-	
+	p_ui->draw_grid_on_screen(prepare_grid());
+	key_ = p_ui->get_keypress_from_user();
 
-		p_ui->draw_grid_on_screen(prepare_grid());
-		key_ = p_ui->get_keypress_from_user();
-
-		while (!has_ended(key_))
+	while (!has_ended(key_))
+	{
+		if (is_arrow_key_code(key_))
 		{
-			if (is_arrow_key_code(key_))
+			mouse_.scamper(key_);
+			snake_.chase_mouse();
+			p_ui->draw_grid_on_screen(prepare_grid());
+			//display score at all times
+			apply_rules();
+			show_score();
+			// if the mouse is at the nut, the nut is colleced and dissapears
+			if (can_mouse_collect_nut(nut_))
 			{
-				mouse_.scamper(key_);
-				snake_.chase_mouse();
-				p_ui->draw_grid_on_screen(prepare_grid());
-				//display score at all times
-				apply_rules();
-				show_score();
-				// if the mouse is at the nut, the nut is colleced and dissapears
-				if (can_mouse_collect_nut(nut_))
-				{
-					nut_.disappears();
-				}
+				nut_.disappears();
 			}
-			key_ = p_ui->get_keypress_from_user();
 		}
-	//p_ui->show_results_on_screen(prepare_end_message());
+		key_ = p_ui->get_keypress_from_user();
+	}
 }
 string Game::prepare_grid() const {
 	//prepare a string that holds the grid information

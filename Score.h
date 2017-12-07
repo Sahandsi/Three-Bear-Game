@@ -9,5 +9,5 @@ public:
 	void update_amount(int amount);
 
 private:
-	int amount_;
+	static int amount_;
 };
