@@ -162,7 +162,7 @@ bool Game::can_mouse_collect_nut(const Nut& nut_) const
 
 void Game::show_score() const
 {
-	cout << "Player Score: " << player_.get_score_amount();
+	cout << player_.get_name() << ":" << " " << player_.get_score_amount();
 }
 
 bool Game::play_again()
