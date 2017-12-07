@@ -3,8 +3,9 @@
 #include "Game.h"
 
 
-Game::Game(UserInterface* pui) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui), player_(//ui read player name)
-{}
+Game::Game(UserInterface* pui, string name) : mouse_(), snake_(&mouse_), underground_(), p_ui(pui), player_(name)
+{
+}
 
 void Game::run() {
 	assert(p_ui != nullptr);
@@ -134,6 +135,11 @@ void Game::load_game(ifstream& fin)
 	
 
 	
+}
+
+bool Game::can_mouse_collect_nut(const Nut& nut_) const
+{
+	return mouse_.can_collect_nut(nut_);
 }
 
 //for output: save game into file 

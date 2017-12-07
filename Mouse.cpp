@@ -93,9 +93,9 @@ void Mouse::set_position(int dx, int dy)
 	}
 }
 
-bool Mouse::can_collect_nut(Nut nut_)
+bool Mouse::can_collect_nut(Nut nut_) const
 {
-	nut_.is_at_position(x_, y_);
+	return nut_.is_at_position(x_, y_);
 }
 
 //////////////////////////////////////////////////////////////////////

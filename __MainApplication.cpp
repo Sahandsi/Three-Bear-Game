@@ -13,8 +13,11 @@ int main()
 
 	UserInterface ui;
 	// ask for name of string (pass string as const reference )
+	string name;
+	cout << "Please Enter Name: ";
+	cin >> name;
 	// asghar testing here 
-	Game game(&ui);
+	Game game(&ui, name);
 	//ofstream fout;
 	//fout.open("Game.txt", ios::out);
 	//if (fout.fail())

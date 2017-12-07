@@ -18,7 +18,6 @@ using namespace std;
 class UserInterface {
 	public:
 		int get_keypress_from_user() const;
-		//readname returns string
 		void draw_grid_on_screen(const string& grid_data) const ;
 		void show_results_on_screen(const string& message) const;
 		void hold_window() const;

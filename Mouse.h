@@ -33,7 +33,7 @@ class Mouse {
 		// used to set position from the file and includes checks to make sure
 		// position is valid
 		void set_position(int dx, int dy);
-		bool can_collect_nut(Nut nut_);
+		bool can_collect_nut(Nut nut_) const;
 
 	private:
 		//data members
