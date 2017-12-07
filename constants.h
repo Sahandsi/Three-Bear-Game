@@ -20,6 +20,7 @@
 #define SNAKEHEAD ('S')	//snake symbol
 #define SNAKEBODY ('T')	//snake symbol
 #define MOUSE     ('M')	//mouse symbol
+#define NUT		  ('N') //Nut symbol
 #define HOLE      ('H')	//hole symbol
 #define FREECELL  ('.')	//empty cell on grid
 

@@ -12,6 +12,7 @@
 
 #include "constants.h"
 #include "Underground.h"
+#include "Nut.h"
 
 class Mouse {
 	public:
@@ -32,6 +33,7 @@ class Mouse {
 		// used to set position from the file and includes checks to make sure
 		// position is valid
 		void set_position(int dx, int dy);
+		bool can_collect_nut(Nut nut_);
 
 	private:
 		//data members
@@ -42,6 +44,7 @@ class Mouse {
 		//supporting functions 
 		void position_in_middle_of_grid();
 		void update_position(int dx, int dy);
+
 };
 
 #endif // !defined(MouseH)
