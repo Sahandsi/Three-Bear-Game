@@ -47,7 +47,8 @@ string Game::prepare_grid() const {
 				if ((row == mouse_.get_y()) && (col == mouse_.get_x()))
 					os << mouse_.get_symbol();	//show mouse
 				else
-					if ((row == nut_.get_y()) && (col == nut_.get_x()))
+					// make sure nut has not been collected
+					if ((row == nut_.get_y()) && (col == nut_.get_x() && (!nut_.has_been_collected())))
 						os << nut_.get_symbol();	//show mouse
 					else
 						{
