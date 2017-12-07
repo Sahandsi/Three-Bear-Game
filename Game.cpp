@@ -32,7 +32,7 @@ void Game::run() {
 			}
 			key_ = p_ui->get_keypress_from_user();
 		}
-	p_ui->show_results_on_screen(prepare_end_message());
+	//p_ui->show_results_on_screen(prepare_end_message());
 }
 string Game::prepare_grid() const {
 	//prepare a string that holds the grid information
