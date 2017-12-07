@@ -11,6 +11,7 @@ void Game::run() {
 	assert(p_ui != nullptr);
 	p_ui->draw_grid_on_screen(prepare_grid());
 	key_ = p_ui->get_keypress_from_user();
+	
 	while (!has_ended(key_))
 	{
 		if (is_arrow_key_code(key_))
@@ -18,8 +19,11 @@ void Game::run() {
 			mouse_.scamper(key_);
 			snake_.chase_mouse();
 			p_ui->draw_grid_on_screen(prepare_grid());
+			//display score at all times
+			show_score();
 			apply_rules();
-			if (nut_.is_at_position(mouse_.get_x(), mouse_.get_y()))
+			// if the mouse is at the nut, the nut is colleced and dissapears
+			if (can_mouse_collect_nut(nut_))
 			{
 				nut_.disappears();
 			}
@@ -148,6 +152,11 @@ void Game::load_game(ifstream& fin)
 bool Game::can_mouse_collect_nut(const Nut& nut_) const
 {
 	return mouse_.can_collect_nut(nut_);
+}
+
+void Game::show_score() const
+{
+	cout << "Player Score: " << player_.get_score_amount();
 }
 
 //for output: save game into file 

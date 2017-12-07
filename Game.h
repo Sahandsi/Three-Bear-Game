@@ -27,6 +27,8 @@ public:
 	string save_game() const;
 	void load_game(ifstream&);
 	bool can_mouse_collect_nut(const Nut& nut_) const;
+	void show_score() const;
+
 	
 
 private:
