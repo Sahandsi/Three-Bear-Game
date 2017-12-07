@@ -1,11 +1,11 @@
 #include "Nut.H"
 
-Nut::Nut()
+Nut::Nut() : symbol_(NUT), x_(8), y_(9), collected_(false)
 {
 
 }
 
-Nut::~Nut()
+Nut::~Nut() 
 {
 
 }
@@ -20,7 +20,7 @@ int Nut::get_y() const
 	return y_;
 }
 
-int Nut::get_symbol() const
+char Nut::get_symbol() const
 {
 	return symbol_;
 }

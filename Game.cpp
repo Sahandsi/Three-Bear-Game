@@ -47,13 +47,16 @@ string Game::prepare_grid() const {
 				if ((row == mouse_.get_y()) && (col == mouse_.get_x()))
 					os << mouse_.get_symbol();	//show mouse
 				else
-				{
-					const int hole_no(find_hole_number_at_position(col, row));
-					if (hole_no != -1)
-						os << underground_.get_hole_no(hole_no).get_symbol();	//show hole
+					if ((row == nut_.get_y()) && (col == nut_.get_x()))
+						os << nut_.get_symbol();	//show mouse
 					else
-						os << FREECELL;	//show free grid cell
-				}
+						{
+							const int hole_no(find_hole_number_at_position(col, row));
+							if (hole_no != -1)
+								os << underground_.get_hole_no(hole_no).get_symbol();	//show hole
+							else
+								os << FREECELL;	//show free grid cell
+						}
 		} //end of col-loop
 		os << endl;
 	} //end of row-loop
