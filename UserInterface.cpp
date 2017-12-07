@@ -15,13 +15,11 @@ int UserInterface::get_keypress_from_user() const {
 
 void UserInterface::draw_grid_on_screen(const string& grid_data) const  {
 	system("cls"); //clear screen
-	
 	cout << grid_data;
 }
 
 void UserInterface::show_results_on_screen(const string& message) const {
 	cout << message;
-
 }
 
 void UserInterface::hold_window() const {

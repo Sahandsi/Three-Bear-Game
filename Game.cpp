@@ -9,27 +9,29 @@ Game::Game(UserInterface* pui, string name) : mouse_(), snake_(&mouse_), undergr
 
 void Game::run() {
 	assert(p_ui != nullptr);
-	p_ui->draw_grid_on_screen(prepare_grid());
-	key_ = p_ui->get_keypress_from_user();
 	
-	while (!has_ended(key_))
-	{
-		if (is_arrow_key_code(key_))
-		{
-			mouse_.scamper(key_);
-			snake_.chase_mouse();
-			p_ui->draw_grid_on_screen(prepare_grid());
-			//display score at all times
-			show_score();
-			apply_rules();
-			// if the mouse is at the nut, the nut is colleced and dissapears
-			if (can_mouse_collect_nut(nut_))
-			{
-				nut_.disappears();
-			}
-		}
+
+		p_ui->draw_grid_on_screen(prepare_grid());
 		key_ = p_ui->get_keypress_from_user();
-	}
+
+		while (!has_ended(key_))
+		{
+			if (is_arrow_key_code(key_))
+			{
+				mouse_.scamper(key_);
+				snake_.chase_mouse();
+				p_ui->draw_grid_on_screen(prepare_grid());
+				//display score at all times
+				apply_rules();
+				show_score();
+				// if the mouse is at the nut, the nut is colleced and dissapears
+				if (can_mouse_collect_nut(nut_))
+				{
+					nut_.disappears();
+				}
+			}
+			key_ = p_ui->get_keypress_from_user();
+		}
 	p_ui->show_results_on_screen(prepare_end_message());
 }
 string Game::prepare_grid() const {
@@ -84,10 +86,17 @@ int Game::find_hole_number_at_position(int x, int y) const {
 
 void Game::apply_rules() {
 	if (snake_.has_caught_mouse())
+	{
 		mouse_.die();
+		// decrease score when mouse gets caught
+		player_.update_score_amount(-1);
+	}	
 	else
 		if (mouse_.has_reached_a_hole(underground_) && nut_.has_been_collected())
+		{ 
+			player_.update_score_amount(1);
 			mouse_.escape_into_hole();
+		}
 }
 bool Game::has_ended(char key) const {
 	return ((key == 'Q') || (!mouse_.is_alive()) || (mouse_.has_escaped()));
@@ -157,6 +166,18 @@ bool Game::can_mouse_collect_nut(const Nut& nut_) const
 void Game::show_score() const
 {
 	cout << "Player Score: " << player_.get_score_amount();
+}
+
+bool Game::play_again()
+{
+	char play_again;
+	cout << "\nDo you want to play agian: 'y' or 'Y' ";
+	cin >> play_again;
+	if (toupper(play_again) == 'Y')
+	{
+		return true;
+	}
+	return false;
 }
 
 //for output: save game into file 

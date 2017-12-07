@@ -28,7 +28,7 @@ public:
 	void load_game(ifstream&);
 	bool can_mouse_collect_nut(const Nut& nut_) const;
 	void show_score() const;
-
+	bool play_again();
 	
 
 private:
