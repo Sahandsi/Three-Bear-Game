@@ -10,7 +10,7 @@ public:
 	Player(string);
 	string get_name() const;
 	int get_score_amount() const;
-	//int update_score_amount(int amount);
+	void update_score_amount(int amount);
 
 private:
 	const string name_;

@@ -3,17 +3,13 @@
 Score::Score() : amount_(0)
 {}
 
-int Score::amount(int amount)
-{
-	return 0;
-}
 
 int Score::get_amount() const
 {
-	return 0;
+	return amount_;
 }
 
-int Score::update_amount()
+void Score::update_amount(int amount)
 {
-	return 0;
+	amount_ += amount;
 }
