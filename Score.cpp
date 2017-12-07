@@ -1,11 +1,7 @@
 #include "Score.h"
 
-Score::
-
 Score::Score() : amount_(0)
-{
-
-}
+{}
 
 int Score::amount(int amount)
 {

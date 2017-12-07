@@ -1,5 +1,5 @@
-#pragma once
-#include "Player.h"
+#ifndef ScoreH
+#define ScoreH
 
 using namespace std;
 class Score
@@ -13,3 +13,5 @@ public:
 private:
 	int amount_;
 };
+
+#endif // !ScoreH
