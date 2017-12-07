@@ -19,6 +19,10 @@ void Game::run() {
 			snake_.chase_mouse();
 			p_ui->draw_grid_on_screen(prepare_grid());
 			apply_rules();
+			if (nut_.is_at_position(mouse_.get_x(), mouse_.get_y()))
+			{
+				nut_.disappears();
+			}
 		}
 		key_ = p_ui->get_keypress_from_user();
 	}
@@ -78,7 +82,7 @@ void Game::apply_rules() {
 	if (snake_.has_caught_mouse())
 		mouse_.die();
 	else
-		if (mouse_.has_reached_a_hole(underground_))
+		if (mouse_.has_reached_a_hole(underground_) && nut_.has_been_collected())
 			mouse_.escape_into_hole();
 }
 bool Game::has_ended(char key) const {
@@ -150,9 +154,6 @@ bool Game::can_mouse_collect_nut(const Nut& nut_) const
 void operator<<(ofstream& fout, const Game& game)
 {
 	fout << game.save_game();
-	
-
-	
 }
 
 //for input: read game from file

@@ -12,12 +12,12 @@ public:
 	char get_symbol() const;
 	bool has_been_collected() const;
 	bool is_at_position(int x, int y) const;
+	void disappears();
 
 private:
 	const char symbol_;
 	int x_, y_;
 	bool collected_;
-	void disappears();
 };
 
 
