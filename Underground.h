@@ -29,7 +29,7 @@ class Underground {
 		Hole get_hole_no(int no) const;
 		// new function
 		vector<Hole> get_holes() const;
-
+		bool is_hole_at_position(int x, int y) const;
 	private:
 		// support function
 		bool is_valid_hole_number(int n) const;
