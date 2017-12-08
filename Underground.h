@@ -26,9 +26,6 @@ using namespace std;
 class Underground {
 	public:
 		Underground();
-		Hole get_hole_no(int no) const;
-		// new function
-		vector<Hole> get_holes() const;
 		bool is_hole_at_position(int x, int y) const;
 		char get_holes_symbol() const;
 	private:
