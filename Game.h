@@ -21,7 +21,6 @@ public:
 	string prepare_grid() const;
 	bool is_arrow_key_code(int keycode) const;
 	void apply_rules();
-	int find_hole_number_at_position(int x, int y) const ;
 	bool has_ended(char key) const;
 	string prepare_end_message() const;
 	string save_game() const;

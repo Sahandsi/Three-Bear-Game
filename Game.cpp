@@ -59,9 +59,8 @@ string Game::prepare_grid() const {
 						os << nut_.get_symbol();	//show mouse
 					else
 						{
-							const int hole_no(find_hole_number_at_position(col, row));
-							if (hole_no != -1)
-								os << underground_.get_hole_no(hole_no).get_symbol();	//show hole
+							if (underground_.is_hole_at_position(col, row))
+								os << underground_.get_holes_symbol();	//show hole
 							else
 								os << FREECELL;	//show free grid cell
 						}
@@ -73,12 +72,6 @@ string Game::prepare_grid() const {
 
 bool Game::is_arrow_key_code(int keycode) const {
 	return (keycode == LEFT) || (keycode == RIGHT) || (keycode == UP) || (keycode == DOWN);
-}
-int Game::find_hole_number_at_position(int x, int y) const {
-	for (int h_no(0); h_no < underground_.get_holes().size(); ++h_no)
-		if (underground_.get_hole_no(h_no).is_at_position(x, y))
-			return h_no;		//number of the hole
-	return -1;				//not a hole
 }
 
 void Game::apply_rules() {

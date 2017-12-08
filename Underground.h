@@ -30,6 +30,7 @@ class Underground {
 		// new function
 		vector<Hole> get_holes() const;
 		bool is_hole_at_position(int x, int y) const;
+		char get_holes_symbol() const;
 	private:
 		// support function
 		bool is_valid_hole_number(int n) const;

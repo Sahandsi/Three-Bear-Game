@@ -33,6 +33,12 @@ bool Underground::is_hole_at_position(int x, int y) const
 	return false;
 }
 
+char Underground::get_holes_symbol() const
+{
+	// return any hole symbol (chose the first one) get this checked
+	return holes_.at(0).get_symbol();
+}
+
 bool Underground::is_valid_hole_number(int no) const {
 	return (no >= 0) && (no < holes_.size()); 
 }
